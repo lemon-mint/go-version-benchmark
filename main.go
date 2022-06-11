@@ -3,10 +3,14 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 	"os"
 	"os/exec"
 	"path/filepath"
+	"sort"
 	"time"
+
+	"github.com/wcharczuk/go-chart/v2"
 )
 
 const BUILD_CACHE_DIR = ".build_cache"
@@ -15,6 +19,7 @@ const GOBIN = ".gobin"
 const CONFIG_FILE = "config.json"
 const BENCHMARK_DIR = "benchmarks"
 const RESULTS_FILE = "results.json"
+const RESULTS_DIR = "results"
 
 type Config struct {
 	Name      string   `json:"name"`
@@ -227,4 +232,72 @@ func main() {
 	}
 
 	Cleanup()
+
+	// Cleanup the results directory.
+	if _, err := os.Stat(RESULTS_DIR); err == nil {
+		err = os.RemoveAll(RESULTS_DIR)
+		if err != nil {
+			panic(err)
+		}
+	}
+	err = os.MkdirAll(RESULTS_DIR, 0755)
+	if err != nil {
+		panic(err)
+	}
+
+	// Make a plot of the results.
+	for benchname, result := range results {
+		c := chart.BarChart{}
+		c.Title = benchname
+		c.YAxis.Name = "Time (ns)"
+
+		c.Bars = make([]chart.Value, len(result.BuildTimes))
+		var sortedKeys []string = make([]string, 0, len(result.BuildTimes))
+		for k := range result.BuildTimes {
+			sortedKeys = append(sortedKeys, k)
+		}
+		sort.Strings(sortedKeys)
+
+		for i, k := range sortedKeys {
+			c.Bars[i].Value = result.RunTimes[k] / 1000000
+			c.Bars[i].Label = k
+		}
+
+		f, err := os.Create(filepath.Join(RESULTS_DIR, benchname+".png"))
+		if err != nil {
+			log.Println(err)
+			continue
+		}
+		defer f.Close()
+		err = c.Render(chart.PNG, f)
+		if err != nil {
+			log.Println(err)
+			continue
+		}
+	}
+
+	// Make Results.md
+	f, err := os.Create(filepath.Join(RESULTS_DIR, "results.md"))
+	if err != nil {
+		panic(err)
+	}
+	defer f.Close()
+	fmt.Fprintf(f, "# Benchmarks\n\n")
+	for _, result := range results {
+		fmt.Fprintf(f, "## %s\n\n", result.Name)
+		fmt.Fprintf(f, "| Version | Build Time (ms) | Run Time (ms) |\n")
+		fmt.Fprintf(f, "| ------ | ------ | ------ |\n")
+		var sortedKeys []string = make([]string, 0, len(result.BuildTimes))
+		for k := range result.BuildTimes {
+			sortedKeys = append(sortedKeys, k)
+		}
+		sort.Strings(sortedKeys)
+		for _, version := range sortedKeys {
+			fmt.Fprintf(f, "| %s | %f | %f |\n", version, result.BuildTimes[version]/(1000000), result.RunTimes[version]/(1000000))
+		}
+		fmt.Fprintf(f, "\n")
+
+		// Include the plot.
+		fmt.Fprintf(f, "![%s](./%s.png)\n\n", result.Name, result.Name)
+	}
 }
