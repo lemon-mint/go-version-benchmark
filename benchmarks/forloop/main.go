@@ -1,6 +1,6 @@
 package main
 
-const N = 1<<30 - 1
+const N = 1<<32 - 1
 
 func main() {
 	v := 0

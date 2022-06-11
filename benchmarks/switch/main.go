@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-const N = 1<<32 - 1
+const N = 1<<31 - 1
 
 func main() {
 	var data []uint32
