@@ -9,7 +9,7 @@ func main() {
 	var data []int = make([]int, DataSize)
 	for i := 0; i < N; i++ {
 		for i := 0; i < DataSize; i++ {
-			data[i] = N - i
+			data[i] = DataSize - i
 		}
 		sort.Ints(data)
 	}
