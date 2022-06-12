@@ -1,0 +1,45 @@
+name: Update Benchmark
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Go
+      uses: actions/setup-go@v3
+      with:
+        go-version: 1.18
+
+    - uses: actions/cache@v3
+      with:
+        path: |
+          .gobin
+        key: ${{ runner.os }}-benchmark-config-${{ hashFiles('**/config.json') }}
+        restore-keys: |
+          ${{ runner.os }}-benchmark-config-
+
+    - name: Update Benchmark
+      run: |
+        go build -o benchmark.exe .
+        ./benchmark.exe
+
+    - name: Git Config
+      run: | 
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+    - name: Git Commit & Push
+      run: |
+        if [[ `git status --porcelain` ]]; then
+          git add .
+          git commit -m "Update Benchmark Results `date`"
+          git push origin main
+        else
+          echo "No changes to commit"
+        fi 

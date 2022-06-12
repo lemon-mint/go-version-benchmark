@@ -1,6 +1,8 @@
 package main
 
 import (
+	"crypto/sha256"
+	"encoding/hex"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -87,6 +89,11 @@ func DownloadGo(version string) {
 	if err != nil {
 		panic(err)
 	}
+}
+
+func HashFileName(name string) string {
+	h := sha256.Sum256([]byte(name))
+	return hex.EncodeToString(h[:])
 }
 
 type BenchmarkResult struct {
@@ -263,7 +270,7 @@ func main() {
 			c.Bars[i].Label = k
 		}
 
-		f, err := os.Create(filepath.Join(RESULTS_DIR, benchname+".png"))
+		f, err := os.Create(filepath.Join(RESULTS_DIR, HashFileName(benchname)+".png"))
 		if err != nil {
 			log.Println(err)
 			continue
@@ -298,6 +305,6 @@ func main() {
 		fmt.Fprintf(f, "\n")
 
 		// Include the plot.
-		fmt.Fprintf(f, "![%s](./%s.png)\n\n", result.Name, result.Name)
+		fmt.Fprintf(f, "![%s](./%s.png)\n\n", result.Name, HashFileName(result.Name))
 	}
 }
