@@ -9,8 +9,11 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
+	"runtime"
 	"sort"
 	"time"
+
+	"github.com/shirou/gopsutil/cpu"
 
 	"github.com/wcharczuk/go-chart/v2"
 )
@@ -103,6 +106,10 @@ type BenchmarkResult struct {
 }
 
 func main() {
+	cpuinfo, err := cpu.Info()
+	if err != nil {
+		panic(err)
+	}
 	CacheDir, err := filepath.Abs(BUILD_CACHE_DIR)
 	if err != nil {
 		panic(err)
@@ -302,6 +309,20 @@ func main() {
 	}
 	defer f.Close()
 	fmt.Fprintf(f, "# Benchmarks\n\n")
+	// CPU Info
+	fmt.Fprintf(f, "## CPU Info\n\n")
+	fmt.Fprintf(f, "NumCPU: %d\n", runtime.NumCPU())
+	fmt.Fprintf(f, "Arch: %s\n", runtime.GOARCH)
+	fmt.Fprintf(f, "OS: %s\n", runtime.GOOS)
+	fmt.Fprintf(f, "Version: %s\n\n", runtime.Version())
+	for i := range cpuinfo {
+		fmt.Fprintf(f, "### CPU %d\n\n", i)
+		fmt.Fprintf(f, "Model: %s\n", cpuinfo[i].ModelName)
+		fmt.Fprintf(f, "Cores: %d\n", cpuinfo[i].Cores)
+		fmt.Fprintf(f, "Mhz: %f\n", cpuinfo[i].Mhz)
+		fmt.Fprintf(f, "CacheSize: %d\n", cpuinfo[i].CacheSize)
+		fmt.Fprintf(f, "Microcode: %s\n\n", cpuinfo[i].Microcode)
+	}
 	for _, result := range results {
 		fmt.Fprintf(f, "## %s\n\n", result.Name)
 		fmt.Fprintf(f, "| Version | Build Time (ms) | Run Time (ms) |\n")
