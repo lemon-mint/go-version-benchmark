@@ -281,7 +281,6 @@ func main() {
 				max = result.RunTimes[k]
 			}
 		}
-		c.YAxis.Range = &chart.ContinuousRange{Min: min / 2, Max: max * 1.3}
 
 		f, err := os.Create(filepath.Join(RESULTS_DIR, HashFileName(benchname)+".png"))
 		if err != nil {
