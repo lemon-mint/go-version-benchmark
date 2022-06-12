@@ -269,6 +269,7 @@ func main() {
 			continue
 		}
 		min := result.RunTimes[sortedKeys[0]]
+		max := result.RunTimes[sortedKeys[0]]
 		for i, k := range sortedKeys {
 			c.Bars[i].Value = result.RunTimes[k] / 1000000
 			c.Bars[i].Label = k
@@ -276,8 +277,11 @@ func main() {
 			if result.RunTimes[k] < min {
 				min = result.RunTimes[k]
 			}
+			if result.RunTimes[k] > max {
+				max = result.RunTimes[k]
+			}
 		}
-		c.YAxis.Range.SetMin(min / 2)
+		c.YAxis.Range = &chart.ContinuousRange{Min: min / 2, Max: max * 1.3}
 
 		f, err := os.Create(filepath.Join(RESULTS_DIR, HashFileName(benchname)+".png"))
 		if err != nil {
