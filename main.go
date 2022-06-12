@@ -265,10 +265,19 @@ func main() {
 		}
 		sort.Strings(sortedKeys)
 
+		if len(sortedKeys) <= 0 {
+			continue
+		}
+		min := result.RunTimes[sortedKeys[0]]
 		for i, k := range sortedKeys {
 			c.Bars[i].Value = result.RunTimes[k] / 1000000
 			c.Bars[i].Label = k
+
+			if result.RunTimes[k] < min {
+				min = result.RunTimes[k]
+			}
 		}
+		c.YAxis.Range.SetMin(min / 2)
 
 		f, err := os.Create(filepath.Join(RESULTS_DIR, HashFileName(benchname)+".png"))
 		if err != nil {
