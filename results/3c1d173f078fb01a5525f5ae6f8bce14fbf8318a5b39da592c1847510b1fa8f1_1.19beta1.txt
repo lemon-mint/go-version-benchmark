@@ -1,0 +1,10 @@
+BenchmarkSort (Random)	1	5933525385 ns/op	5947451000 user-ns/op	0 sys-ns/op
+BenchmarkSort (Random)	1	5962241912 ns/op	5968553000 user-ns/op	12009000 sys-ns/op
+BenchmarkSort (Random)	1	5982716238 ns/op	5992636000 user-ns/op	8000000 sys-ns/op
+BenchmarkSort (Random)	1	5967937679 ns/op	5981566000 user-ns/op	4006000 sys-ns/op
+BenchmarkSort (Random)	1	6020002955 ns/op	6020627000 user-ns/op	16055000 sys-ns/op
+BenchmarkSort (Random)	1	6012423363 ns/op	6020362000 user-ns/op	11992000 sys-ns/op
+BenchmarkSort (Random)	1	6141718230 ns/op	6144908000 user-ns/op	16033000 sys-ns/op
+BenchmarkSort (Random)	1	5964193610 ns/op	5978454000 user-ns/op	4007000 sys-ns/op
+BenchmarkSort (Random)	1	6020504929 ns/op	6020425000 user-ns/op	20028000 sys-ns/op
+BenchmarkSort (Random)	1	5987724543 ns/op	5993675000 user-ns/op	12011000 sys-ns/op
