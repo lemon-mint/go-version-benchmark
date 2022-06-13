@@ -328,6 +328,9 @@ func main() {
 			continue
 		}
 
+		var maxs []float64
+		var mins []float64
+
 		for i, k := range sortedKeys {
 			data := stats.LoadRawData(result.RunTimes[k])
 			median, err := data.Median()
@@ -336,7 +339,32 @@ func main() {
 			}
 			c.Bars[i].Value = median
 			c.Bars[i].Label = k
+			max, err := data.Max()
+			if err != nil {
+				panic(err)
+			}
+			min, err := data.Min()
+			if err != nil {
+				panic(err)
+			}
+			maxs = append(maxs, max)
+			mins = append(mins, min)
 		}
+
+		maxsData := stats.LoadRawData(maxs)
+		minsData := stats.LoadRawData(mins)
+		max, err := maxsData.Max()
+		if err != nil {
+			panic(err)
+		}
+		min, err := minsData.Min()
+		if err != nil {
+			panic(err)
+		}
+
+		_ = max
+
+		c.YAxis.Range = &chart.ContinuousRange{Min: min / 2, Max: max * 1.3}
 
 		f, err := os.Create(filepath.Join(RESULTS_DIR, HashFileName(benchname)+".png"))
 		if err != nil {
