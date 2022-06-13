@@ -1,0 +1,10 @@
+Benchmarkalloc_1.5k	1	3303873124 ns/op	3810439000 user-ns/op	151575000 sys-ns/op
+Benchmarkalloc_1.5k	1	3432212887 ns/op	3991596000 user-ns/op	279535000 sys-ns/op
+Benchmarkalloc_1.5k	1	3358230598 ns/op	3968075000 user-ns/op	228143000 sys-ns/op
+Benchmarkalloc_1.5k	1	3353881475 ns/op	3775504000 user-ns/op	215743000 sys-ns/op
+Benchmarkalloc_1.5k	1	3373986882 ns/op	3946554000 user-ns/op	272176000 sys-ns/op
+Benchmarkalloc_1.5k	1	3414593949 ns/op	3792201000 user-ns/op	223309000 sys-ns/op
+Benchmarkalloc_1.5k	1	3478802281 ns/op	4068175000 user-ns/op	174350000 sys-ns/op
+Benchmarkalloc_1.5k	1	3402909303 ns/op	3878767000 user-ns/op	165759000 sys-ns/op
+Benchmarkalloc_1.5k	1	3307665228 ns/op	3947738000 user-ns/op	178499000 sys-ns/op
+Benchmarkalloc_1.5k	1	3346573936 ns/op	3845896000 user-ns/op	134943000 sys-ns/op
