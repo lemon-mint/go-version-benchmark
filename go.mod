@@ -3,6 +3,7 @@ module github.com/lemon-mint/go-version-benchmark
 go 1.18
 
 require (
+	github.com/montanaflynn/stats v0.6.6
 	github.com/shirou/gopsutil v2.21.11+incompatible
 	github.com/wcharczuk/go-chart/v2 v2.1.0
 )

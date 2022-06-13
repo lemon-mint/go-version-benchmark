@@ -13,6 +13,7 @@ import (
 	"sort"
 	"time"
 
+	"github.com/montanaflynn/stats"
 	"github.com/shirou/gopsutil/cpu"
 
 	"github.com/wcharczuk/go-chart/v2"
@@ -100,9 +101,9 @@ func HashFileName(name string) string {
 }
 
 type BenchmarkResult struct {
-	Name       string             `json:"name"`
-	BuildTimes map[string]float64 `json:"build_times"`
-	RunTimes   map[string]float64 `json:"run_times"`
+	Name       string               `json:"name"`
+	BuildTimes map[string][]float64 `json:"build_times"`
+	RunTimes   map[string][]float64 `json:"run_times"`
 }
 
 func main() {
@@ -156,6 +157,20 @@ func main() {
 	for _, list := range lists {
 		if !list.IsDir() {
 			continue
+		}
+
+		if len(os.Args) > 1 {
+			requestedBenchmark := os.Args[1:]
+			found := false
+			for _, requested := range requestedBenchmark {
+				if list.Name() == requested {
+					found = true
+					break
+				}
+			}
+			if !found {
+				continue
+			}
 		}
 		listName := list.Name()
 		configPath := filepath.Join(BENCHMARK_DIR, listName, "meta.json")
@@ -226,12 +241,34 @@ func main() {
 			if _, ok := results[benchmarkName]; !ok {
 				results[benchmarkName] = BenchmarkResult{
 					Name:       benchmarkName,
-					BuildTimes: map[string]float64{},
-					RunTimes:   map[string]float64{},
+					BuildTimes: map[string][]float64{},
+					RunTimes:   map[string][]float64{},
 				}
 			}
-			results[benchmarkName].BuildTimes[version] = float64(buildAvg.Nanoseconds())
-			results[benchmarkName].RunTimes[version] = float64(runAvg.Nanoseconds())
+			var buildTimesFloat []float64
+			var runTimesFloat []float64
+			for _, buildTime := range buildTimes {
+				buildTimesFloat = append(buildTimesFloat, float64(buildTime.Nanoseconds()))
+			}
+			for _, runTime := range runTimes {
+				runTimesFloat = append(runTimesFloat, float64(runTime.Nanoseconds()))
+			}
+			results[benchmarkName].BuildTimes[version] = buildTimesFloat
+			results[benchmarkName].RunTimes[version] = runTimesFloat
+		}
+	}
+
+	// ns => ms
+	for _, result := range results {
+		for _, buildTimes := range result.BuildTimes {
+			for i, buildTime := range buildTimes {
+				buildTimes[i] = buildTime / 1000000.0
+			}
+		}
+		for _, runTimes := range result.RunTimes {
+			for i, runTime := range runTimes {
+				runTimes[i] = runTime / 1000000.0
+			}
 		}
 	}
 
@@ -275,18 +312,15 @@ func main() {
 		if len(sortedKeys) <= 0 {
 			continue
 		}
-		min := result.RunTimes[sortedKeys[0]]
-		max := result.RunTimes[sortedKeys[0]]
-		for i, k := range sortedKeys {
-			c.Bars[i].Value = result.RunTimes[k] / 1000000
-			c.Bars[i].Label = k
 
-			if result.RunTimes[k] < min {
-				min = result.RunTimes[k]
+		for i, k := range sortedKeys {
+			data := stats.LoadRawData(result.RunTimes[k])
+			median, err := data.Median()
+			if err != nil {
+				panic(err)
 			}
-			if result.RunTimes[k] > max {
-				max = result.RunTimes[k]
-			}
+			c.Bars[i].Value = median
+			c.Bars[i].Label = k
 		}
 
 		f, err := os.Create(filepath.Join(RESULTS_DIR, HashFileName(benchname)+".png"))
@@ -314,7 +348,8 @@ func main() {
 	fmt.Fprintf(f, "NumCPU: %d\n", runtime.NumCPU())
 	fmt.Fprintf(f, "Arch: %s\n", runtime.GOARCH)
 	fmt.Fprintf(f, "OS: %s\n", runtime.GOOS)
-	fmt.Fprintf(f, "Version: %s\n\n", runtime.Version())
+	fmt.Fprintf(f, "Version: %s\n", runtime.Version())
+	fmt.Fprintf(f, "Itercount: %d\n", config.Itercount)
 	for i := range cpuinfo {
 		fmt.Fprintf(f, "### CPU %d\n\n", i)
 		fmt.Fprintf(f, "Model: %s\n", cpuinfo[i].ModelName)
@@ -325,15 +360,33 @@ func main() {
 	}
 	for _, result := range results {
 		fmt.Fprintf(f, "## %s\n\n", result.Name)
-		fmt.Fprintf(f, "| Version | Build Time (ms) | Run Time (ms) |\n")
-		fmt.Fprintf(f, "| ------ | ------ | ------ |\n")
+		fmt.Fprintf(f, "| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |\n")
+		fmt.Fprintf(f, "| ------ | ------ | ------ | ------ | ------ |\n")
 		var sortedKeys []string = make([]string, 0, len(result.BuildTimes))
 		for k := range result.BuildTimes {
 			sortedKeys = append(sortedKeys, k)
 		}
 		sort.Strings(sortedKeys)
 		for _, version := range sortedKeys {
-			fmt.Fprintf(f, "| %s | %f | %f |\n", version, result.BuildTimes[version]/(1000000), result.RunTimes[version]/(1000000))
+			BuildTimeData := stats.LoadRawData(result.BuildTimes[version])
+			BuildTimeMedian, err := BuildTimeData.Median()
+			if err != nil {
+				panic(err)
+			}
+			BuildTimeStdDev, err := BuildTimeData.StandardDeviation()
+			if err != nil {
+				panic(err)
+			}
+			RunTimeData := stats.LoadRawData(result.RunTimes[version])
+			RunTimeMedian, err := RunTimeData.Median()
+			if err != nil {
+				panic(err)
+			}
+			RunTimeStdDev, err := RunTimeData.StandardDeviation()
+			if err != nil {
+				panic(err)
+			}
+			fmt.Fprintf(f, "| %s | %f | %f | %f | %f |\n", version, BuildTimeMedian, BuildTimeStdDev, RunTimeMedian, RunTimeStdDev)
 		}
 		fmt.Fprintf(f, "\n")
 
