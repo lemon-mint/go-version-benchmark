@@ -11,7 +11,7 @@ Itercount: 10
 
 Model: Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz
 Cores: 1
-Mhz: 2095.196000
+Mhz: 2095.195000
 CacheSize: 36608
 Microcode: 0xffffffff
 
@@ -19,67 +19,17 @@ Microcode: 0xffffffff
 
 Model: Intel(R) Xeon(R) Platinum 8171M CPU @ 2.60GHz
 Cores: 1
-Mhz: 2095.196000
+Mhz: 2095.195000
 CacheSize: 36608
 Microcode: 0xffffffff
-
-## MergeSort
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 150.348662 | 15.853428 | 7089.168803 | 62.592027 |
-| 1.18 | 154.264884 | 4.191449 | 6820.297801 | 63.818212 |
-| 1.19beta1 | 330.538934 | 5.156748 | 8559.147340 | 90.351983 |
-
-![MergeSort](./619024e898d5dcaadcf23d3b2f3a22d86c871a7b76284aafd1eb289200c2e49a.png)
-
-## regexp (Compile)
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 191.360455 | 6.678284 | 1318.801561 | 9.714197 |
-| 1.18 | 192.153448 | 6.597331 | 1405.294146 | 23.430624 |
-| 1.19beta1 | 353.882023 | 5.247217 | 1416.917205 | 30.942236 |
-
-![regexp (Compile)](./ff7ab1cc39d9f8604be0c37e0bdeb4c7cf02cf9cc420d7410e411ce3835d9a42.png)
-
-## Sort (Random)
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 167.870596 | 5.116242 | 5920.544576 | 52.786317 |
-| 1.18 | 180.750758 | 6.279065 | 5944.630965 | 65.441049 |
-| 1.19beta1 | 339.798310 | 8.954478 | 5985.220391 | 54.459255 |
-
-![Sort (Random)](./3c1d173f078fb01a5525f5ae6f8bce14fbf8318a5b39da592c1847510b1fa8f1.png)
-
-## Sort (Reversed)
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 156.711437 | 5.628637 | 4450.415264 | 82.690022 |
-| 1.18 | 166.108667 | 3.977135 | 4242.985040 | 63.244815 |
-| 1.19beta1 | 333.654955 | 5.014153 | 446.339269 | 10.079495 |
-
-![Sort (Reversed)](./a0f4a74015cf54e2efe82a24aa116a48b4f983e1fc0126e0d3e84f2560003ee7.png)
-
-## switch-case
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 230.750853 | 10.220744 | 6208.462280 | 54.265331 |
-| 1.18 | 232.802627 | 11.146732 | 6832.173033 | 90.540932 |
-| 1.19beta1 | 399.999107 | 7.354559 | 3893.857855 | 25.304309 |
-
-![switch-case](./1af1469d75e77ed39c58041d45b37b329137876f59fb4c03529ebb65c78b40aa.png)
 
 ## alloc_1.5k
 
 | Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
 | ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 144.159192 | 2.435024 | 3871.249986 | 41.554083 |
-| 1.18 | 155.696615 | 9.376130 | 5162.688759 | 66.861435 |
-| 1.19beta1 | 332.458689 | 12.083532 | 5143.618080 | 69.624498 |
+| 1.17 | 141.553154 | 2.769149 | 3776.955514 | 33.687471 |
+| 1.18 | 152.840068 | 5.221140 | 5220.650002 | 2.403427 |
+| 1.19beta1 | 314.559811 | 7.641251 | 5216.332502 | 2.306407 |
 
 ![alloc_1.5k](./78691b2f49e91d20e4fc03ba30be4e2828c5acd9ddd58fbf8d3e5b21bed97b8d.png)
 
@@ -87,9 +37,59 @@ Microcode: 0xffffffff
 
 | Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
 | ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 143.255946 | 4.707952 | 4610.885252 | 50.943452 |
-| 1.18 | 156.507955 | 6.654765 | 4730.519360 | 28.192414 |
-| 1.19beta1 | 322.595323 | 12.251884 | 4751.532231 | 25.694831 |
+| 1.17 | 138.904246 | 5.177669 | 4678.649234 | 3.590854 |
+| 1.18 | 148.628546 | 5.143435 | 4812.085052 | 5.351677 |
+| 1.19beta1 | 316.033606 | 9.468483 | 4811.930056 | 2.472726 |
 
 ![Fibonacci](./016be0f0bc3aacaadb309d0adc2b1024980e3775065236c79ab0d186380b4f83.png)
+
+## MergeSort
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 145.757404 | 9.651345 | 6970.884937 | 129.270235 |
+| 1.18 | 151.714944 | 2.555399 | 6667.464937 | 28.846891 |
+| 1.19beta1 | 321.881269 | 4.814185 | 8323.964600 | 95.085254 |
+
+![MergeSort](./619024e898d5dcaadcf23d3b2f3a22d86c871a7b76284aafd1eb289200c2e49a.png)
+
+## regexp (Compile)
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 188.109441 | 3.063800 | 1305.700509 | 5.014184 |
+| 1.18 | 188.980199 | 5.253778 | 1370.634546 | 7.948662 |
+| 1.19beta1 | 351.592278 | 4.281332 | 1381.363477 | 8.937739 |
+
+![regexp (Compile)](./ff7ab1cc39d9f8604be0c37e0bdeb4c7cf02cf9cc420d7410e411ce3835d9a42.png)
+
+## Sort (Random)
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 167.231211 | 3.537029 | 6014.870011 | 2.895976 |
+| 1.18 | 172.445561 | 11.281116 | 6026.083722 | 4.239135 |
+| 1.19beta1 | 329.176706 | 8.925725 | 6033.752869 | 3.046905 |
+
+![Sort (Random)](./3c1d173f078fb01a5525f5ae6f8bce14fbf8318a5b39da592c1847510b1fa8f1.png)
+
+## Sort (Reversed)
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 189.578656 | 22.425505 | 4451.800763 | 3.859409 |
+| 1.18 | 159.831327 | 2.763941 | 4290.532682 | 3.137230 |
+| 1.19beta1 | 321.109706 | 8.160241 | 443.689702 | 1.273763 |
+
+![Sort (Reversed)](./a0f4a74015cf54e2efe82a24aa116a48b4f983e1fc0126e0d3e84f2560003ee7.png)
+
+## switch-case
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 225.642793 | 3.890284 | 6235.729124 | 4.850952 |
+| 1.18 | 226.949578 | 16.247222 | 6865.329798 | 1.361651 |
+| 1.19beta1 | 383.623663 | 5.411964 | 3925.325838 | 3.256768 |
+
+![switch-case](./1af1469d75e77ed39c58041d45b37b329137876f59fb4c03529ebb65c78b40aa.png)
 
