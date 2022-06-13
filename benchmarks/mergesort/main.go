@@ -1,6 +1,6 @@
 package main
 
-const N = 1<<10 - 1
+const N = 1<<9 - 1
 const DataSize = 1 << 16
 
 func main() {
