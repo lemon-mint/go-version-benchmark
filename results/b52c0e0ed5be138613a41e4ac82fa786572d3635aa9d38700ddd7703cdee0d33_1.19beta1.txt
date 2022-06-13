@@ -1,0 +1,10 @@
+Benchmarkregexp_Compile	1	1431038402 ns/op	1537281000 user-ns/op	53578000 sys-ns/op
+Benchmarkregexp_Compile	1	1414529690 ns/op	1505557000 user-ns/op	56207000 sys-ns/op
+Benchmarkregexp_Compile	1	1403360897 ns/op	1491670000 user-ns/op	56594000 sys-ns/op
+Benchmarkregexp_Compile	1	1397928388 ns/op	1462784000 user-ns/op	77417000 sys-ns/op
+Benchmarkregexp_Compile	1	1382858881 ns/op	1506393000 user-ns/op	16463000 sys-ns/op
+Benchmarkregexp_Compile	1	1416977940 ns/op	1521576000 user-ns/op	40792000 sys-ns/op
+Benchmarkregexp_Compile	1	1439330865 ns/op	1549402000 user-ns/op	44851000 sys-ns/op
+Benchmarkregexp_Compile	1	1446885063 ns/op	1533939000 user-ns/op	53318000 sys-ns/op
+Benchmarkregexp_Compile	1	1426308998 ns/op	1498659000 user-ns/op	68671000 sys-ns/op
+Benchmarkregexp_Compile	1	1435249813 ns/op	1539075000 user-ns/op	49514000 sys-ns/op

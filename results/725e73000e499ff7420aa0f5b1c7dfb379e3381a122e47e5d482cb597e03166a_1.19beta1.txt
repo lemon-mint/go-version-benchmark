@@ -1,0 +1,10 @@
+Benchmarkswitch_case	1	3908204738 ns/op	3914691000 user-ns/op	4006000 sys-ns/op
+Benchmarkswitch_case	1	3910277551 ns/op	3918200000 user-ns/op	4006000 sys-ns/op
+Benchmarkswitch_case	1	3892405687 ns/op	3898229000 user-ns/op	4006000 sys-ns/op
+Benchmarkswitch_case	1	3890060887 ns/op	3898344000 user-ns/op	0 sys-ns/op
+Benchmarkswitch_case	1	3872489337 ns/op	3869468000 user-ns/op	12016000 sys-ns/op
+Benchmarkswitch_case	1	3894108419 ns/op	3896003000 user-ns/op	8008000 sys-ns/op
+Benchmarkswitch_case	1	3874259370 ns/op	3883253000 user-ns/op	0 sys-ns/op
+Benchmarkswitch_case	1	3888533340 ns/op	3891757000 user-ns/op	8015000 sys-ns/op
+Benchmarkswitch_case	1	3897431384 ns/op	3897463000 user-ns/op	7994000 sys-ns/op
+Benchmarkswitch_case	1	3880695090 ns/op	3888461000 user-ns/op	4004000 sys-ns/op
