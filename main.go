@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"crypto/sha256"
 	"encoding/hex"
 	"encoding/json"
@@ -152,6 +153,18 @@ func main() {
 		panic(err)
 	}
 
+	// Cleanup the results directory.
+	if _, err := os.Stat(RESULTS_DIR); err == nil {
+		err = os.RemoveAll(RESULTS_DIR)
+		if err != nil {
+			panic(err)
+		}
+	}
+	err = os.MkdirAll(RESULTS_DIR, 0755)
+	if err != nil {
+		panic(err)
+	}
+
 	results := map[string]BenchmarkResult{}
 
 	for _, list := range lists {
@@ -209,9 +222,16 @@ func main() {
 				buildTimes = append(buildTimes, buildTime)
 			}
 
+			resultsFile, err := os.Create(filepath.Join(RESULTS_DIR, HashFileName(benchmarkName)+"_"+version+".txt"))
+			if err != nil {
+				panic(err)
+			}
+			rw := bufio.NewWriter(resultsFile)
+
 			// Run the program.
 			var runTimes []time.Duration
 			for i := 0; i < config.Itercount; i++ {
+				fmt.Fprintf(rw, "Benchmark%s\t", benchmarkName)
 				t := time.Now()
 				cmd := exec.Command(program)
 				cmd.Stdout = os.Stdout
@@ -221,7 +241,12 @@ func main() {
 					panic(err)
 				}
 				runTime := time.Since(t)
+				sysT := cmd.ProcessState.SystemTime()
+				userT := cmd.ProcessState.UserTime()
 				runTimes = append(runTimes, runTime)
+				fmt.Fprintf(rw, "1\t%d ns/op", runTime.Nanoseconds())
+				fmt.Fprintf(rw, "\t%d user-ns/op", userT.Nanoseconds())
+				fmt.Fprintf(rw, "\t%d sys-ns/op\n", sysT.Nanoseconds())
 			}
 
 			// Print the results.
@@ -255,6 +280,8 @@ func main() {
 			}
 			results[benchmarkName].BuildTimes[version] = buildTimesFloat
 			results[benchmarkName].RunTimes[version] = runTimesFloat
+			rw.Flush()
+			resultsFile.Close()
 		}
 	}
 
@@ -283,18 +310,6 @@ func main() {
 	}
 
 	Cleanup()
-
-	// Cleanup the results directory.
-	if _, err := os.Stat(RESULTS_DIR); err == nil {
-		err = os.RemoveAll(RESULTS_DIR)
-		if err != nil {
-			panic(err)
-		}
-	}
-	err = os.MkdirAll(RESULTS_DIR, 0755)
-	if err != nil {
-		panic(err)
-	}
 
 	// Make a plot of the results.
 	for benchname, result := range results {
@@ -344,7 +359,7 @@ func main() {
 	defer f.Close()
 	fmt.Fprintf(f, "# Benchmarks\n\n")
 	// CPU Info
-	fmt.Fprintf(f, "## CPU Info\n\n")
+	fmt.Fprintf(f, "## Environment\n\n")
 	fmt.Fprintf(f, "NumCPU: %d\n", runtime.NumCPU())
 	fmt.Fprintf(f, "Arch: %s\n", runtime.GOARCH)
 	fmt.Fprintf(f, "OS: %s\n", runtime.GOOS)

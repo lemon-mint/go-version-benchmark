@@ -42,3 +42,9 @@ jobs:
         else
           echo "No changes to commit"
         fi 
+    - uses: actions/upload-artifact@v3
+      with:
+        name: benchmark_results
+        path: |
+          results/
+          results.json
