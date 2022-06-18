@@ -3,7 +3,7 @@ name: Update Benchmark
 on:
   workflow_dispatch:
   schedule:
-  - cron: '0 20 * * *'
+  - cron: '35 19 * * *' # to avoid interference with other workflows
 
 jobs:
   update:
