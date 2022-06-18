@@ -1,0 +1,10 @@
+Benchmarkregexp_FindAllString	1	2683105700 ns/op	2704583000 user-ns/op	24292000 sys-ns/op
+Benchmarkregexp_FindAllString	1	2563716205 ns/op	2565506000 user-ns/op	35797000 sys-ns/op
+Benchmarkregexp_FindAllString	1	2491669511 ns/op	2509635000 user-ns/op	24208000 sys-ns/op
+Benchmarkregexp_FindAllString	1	2468618282 ns/op	2492694000 user-ns/op	4015000 sys-ns/op
+Benchmarkregexp_FindAllString	1	2543609543 ns/op	2567721000 user-ns/op	16073000 sys-ns/op
+Benchmarkregexp_FindAllString	1	2565987806 ns/op	2599506000 user-ns/op	15972000 sys-ns/op
+Benchmarkregexp_FindAllString	1	2693006336 ns/op	2713706000 user-ns/op	24193000 sys-ns/op
+Benchmarkregexp_FindAllString	1	2691408737 ns/op	2692184000 user-ns/op	36056000 sys-ns/op
+Benchmarkregexp_FindAllString	1	2633730801 ns/op	2650495000 user-ns/op	28026000 sys-ns/op
+Benchmarkregexp_FindAllString	1	2626350461 ns/op	2643514000 user-ns/op	28079000 sys-ns/op

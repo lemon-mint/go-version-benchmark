@@ -3,83 +3,56 @@
 ## Environment
 
 NumCPU: 2
+
 Arch: amd64
+
 OS: linux
+
 Version: go1.18.3
+
 Itercount: 10
+
 ### CPU 0
 
-Model: Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz
+Model: Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
+
 Cores: 1
-Mhz: 2394.458000
-CacheSize: 30720
+
+Mhz: 2294.686000
+
+CacheSize: 51200
+
 Microcode: 0xffffffff
 
 ### CPU 1
 
-Model: Intel(R) Xeon(R) CPU E5-2673 v3 @ 2.40GHz
+Model: Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
+
 Cores: 1
-Mhz: 2394.458000
-CacheSize: 30720
+
+Mhz: 2294.686000
+
+CacheSize: 51200
+
 Microcode: 0xffffffff
 
-## switch_case
+## regexp_FindAllString
 
 | Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
 | ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 245.171811 | 11.699348 | 6867.743138 | 122.518549 |
-| 1.18 | 242.279220 | 12.522992 | 6693.125340 | 86.060557 |
-| 1.19beta1 | 404.572906 | 32.839189 | 3876.413620 | 25.961967 |
+| 1.17 | 195.929333 | 6.057766 | 2828.291948 | 85.204333 |
+| 1.18 | 191.205604 | 8.163555 | 2596.169134 | 77.616858 |
+| 1.19beta1 | 363.384961 | 9.113445 | 2553.146159 | 34.974015 |
 
-![switch_case](./725e73000e499ff7420aa0f5b1c7dfb379e3381a122e47e5d482cb597e03166a.png)
-
-## alloc_1.5k
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 154.695673 | 10.924099 | 3686.707317 | 34.979425 |
-| 1.18 | 165.584548 | 6.709491 | 2673.011686 | 87.515756 |
-| 1.19beta1 | 332.652374 | 13.647011 | 2730.103418 | 136.910460 |
-
-![alloc_1.5k](./78691b2f49e91d20e4fc03ba30be4e2828c5acd9ddd58fbf8d3e5b21bed97b8d.png)
-
-## Fibonacci
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 154.321147 | 6.015481 | 4794.516156 | 22.005376 |
-| 1.18 | 158.245968 | 7.273246 | 4767.225050 | 45.126625 |
-| 1.19beta1 | 342.487996 | 10.192496 | 4747.898387 | 32.699539 |
-
-![Fibonacci](./016be0f0bc3aacaadb309d0adc2b1024980e3775065236c79ab0d186380b4f83.png)
-
-## MergeSort
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 165.017169 | 8.799689 | 7373.928251 | 68.637240 |
-| 1.18 | 167.046509 | 10.909593 | 7134.061489 | 123.116101 |
-| 1.19beta1 | 351.458969 | 8.206448 | 8808.071891 | 135.094964 |
-
-![MergeSort](./619024e898d5dcaadcf23d3b2f3a22d86c871a7b76284aafd1eb289200c2e49a.png)
-
-## regexp_Compile
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 195.359782 | 6.647899 | 1312.334673 | 12.613213 |
-| 1.18 | 204.087414 | 6.928354 | 1372.223231 | 14.732664 |
-| 1.19beta1 | 374.486043 | 10.032287 | 1393.639848 | 17.850572 |
-
-![regexp_Compile](./b52c0e0ed5be138613a41e4ac82fa786572d3635aa9d38700ddd7703cdee0d33.png)
+![regexp_FindAllString](./efbe67306d3132a2dcfa4c74e1ad1b2c51fd7423e2e5a5e3e4878c640f2a526d.png)
 
 ## Sort_Random
 
 | Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
 | ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 178.333080 | 4.367473 | 5872.687106 | 41.332737 |
-| 1.18 | 188.280809 | 14.314752 | 5840.125417 | 59.507398 |
-| 1.19beta1 | 377.219681 | 12.778984 | 5806.259708 | 126.514307 |
+| 1.17 | 175.165259 | 5.693571 | 5233.532098 | 87.986669 |
+| 1.18 | 175.670905 | 12.839856 | 5090.399645 | 87.347573 |
+| 1.19beta1 | 355.685816 | 12.307653 | 5139.460999 | 60.886234 |
 
 ![Sort_Random](./7a0a58c9e3b5825d5c91544e7e01469f5aeb4b3af178a861bf75b9731df604c0.png)
 
@@ -87,9 +60,59 @@ Microcode: 0xffffffff
 
 | Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
 | ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 169.307197 | 12.505989 | 4493.683936 | 88.608198 |
-| 1.18 | 176.143945 | 6.224475 | 4454.730698 | 92.608783 |
-| 1.19beta1 | 339.461149 | 10.362614 | 435.318125 | 9.436758 |
+| 1.17 | 148.583308 | 8.348949 | 4008.336052 | 80.629729 |
+| 1.18 | 166.580593 | 9.213555 | 4021.703131 | 101.365043 |
+| 1.19beta1 | 327.914266 | 16.442923 | 402.162895 | 9.738931 |
 
 ![Sort_Reversed](./4f239a2e282214a7bf7c377fcf6bb4540d0934ce7ce00fadb75e8eeeb38d843d.png)
+
+## switch_case
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 241.786218 | 8.356953 | 6188.911654 | 86.737469 |
+| 1.18 | 227.940825 | 23.693046 | 6081.273211 | 143.774524 |
+| 1.19beta1 | 396.189709 | 20.434339 | 3563.950055 | 113.477415 |
+
+![switch_case](./725e73000e499ff7420aa0f5b1c7dfb379e3381a122e47e5d482cb597e03166a.png)
+
+## alloc_1.5k
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 135.227653 | 4.697778 | 3526.674977 | 91.115692 |
+| 1.18 | 146.410686 | 6.216280 | 2331.217804 | 56.594910 |
+| 1.19beta1 | 298.498546 | 11.491245 | 2402.170558 | 75.034890 |
+
+![alloc_1.5k](./78691b2f49e91d20e4fc03ba30be4e2828c5acd9ddd58fbf8d3e5b21bed97b8d.png)
+
+## Fibonacci
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 147.994542 | 7.203599 | 3963.910181 | 47.820747 |
+| 1.18 | 146.803784 | 12.031278 | 3960.420526 | 51.302936 |
+| 1.19beta1 | 315.839295 | 15.308783 | 3987.007513 | 76.568563 |
+
+![Fibonacci](./016be0f0bc3aacaadb309d0adc2b1024980e3775065236c79ab0d186380b4f83.png)
+
+## MergeSort
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 151.142048 | 10.582772 | 7403.846653 | 106.897538 |
+| 1.18 | 156.465829 | 17.520990 | 6934.100549 | 246.170613 |
+| 1.19beta1 | 326.372908 | 12.605839 | 8769.797689 | 135.639158 |
+
+![MergeSort](./619024e898d5dcaadcf23d3b2f3a22d86c871a7b76284aafd1eb289200c2e49a.png)
+
+## regexp_Compile
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 181.559510 | 7.631190 | 1184.946245 | 39.653741 |
+| 1.18 | 180.003351 | 5.957457 | 1230.829195 | 25.072946 |
+| 1.19beta1 | 337.988729 | 6.762227 | 1299.189560 | 51.166327 |
+
+![regexp_Compile](./b52c0e0ed5be138613a41e4ac82fa786572d3635aa9d38700ddd7703cdee0d33.png)
 
