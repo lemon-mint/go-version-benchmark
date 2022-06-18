@@ -377,6 +377,18 @@ func main() {
 			log.Println(err)
 			continue
 		}
+
+		f, err = os.Create(filepath.Join(RESULTS_DIR, HashFileName(benchname)+".svg"))
+		if err != nil {
+			log.Println(err)
+			continue
+		}
+		defer f.Close()
+		err = c.Render(chart.SVG, f)
+		if err != nil {
+			log.Println(err)
+			continue
+		}
 	}
 
 	// Make Results.md
@@ -388,17 +400,17 @@ func main() {
 	fmt.Fprintf(f, "# Benchmarks\n\n")
 	// CPU Info
 	fmt.Fprintf(f, "## Environment\n\n")
-	fmt.Fprintf(f, "NumCPU: %d\n", runtime.NumCPU())
-	fmt.Fprintf(f, "Arch: %s\n", runtime.GOARCH)
-	fmt.Fprintf(f, "OS: %s\n", runtime.GOOS)
-	fmt.Fprintf(f, "Version: %s\n", runtime.Version())
-	fmt.Fprintf(f, "Itercount: %d\n", config.Itercount)
+	fmt.Fprintf(f, "NumCPU: %d\n\n", runtime.NumCPU())
+	fmt.Fprintf(f, "Arch: %s\n\n", runtime.GOARCH)
+	fmt.Fprintf(f, "OS: %s\n\n", runtime.GOOS)
+	fmt.Fprintf(f, "Version: %s\n\n", runtime.Version())
+	fmt.Fprintf(f, "Itercount: %d\n\n", config.Itercount)
 	for i := range cpuinfo {
 		fmt.Fprintf(f, "### CPU %d\n\n", i)
-		fmt.Fprintf(f, "Model: %s\n", cpuinfo[i].ModelName)
-		fmt.Fprintf(f, "Cores: %d\n", cpuinfo[i].Cores)
-		fmt.Fprintf(f, "Mhz: %f\n", cpuinfo[i].Mhz)
-		fmt.Fprintf(f, "CacheSize: %d\n", cpuinfo[i].CacheSize)
+		fmt.Fprintf(f, "Model: %s\n\n", cpuinfo[i].ModelName)
+		fmt.Fprintf(f, "Cores: %d\n\n", cpuinfo[i].Cores)
+		fmt.Fprintf(f, "Mhz: %f\n\n", cpuinfo[i].Mhz)
+		fmt.Fprintf(f, "CacheSize: %d\n\n", cpuinfo[i].CacheSize)
 		fmt.Fprintf(f, "Microcode: %s\n\n", cpuinfo[i].Microcode)
 	}
 	for _, result := range results {
