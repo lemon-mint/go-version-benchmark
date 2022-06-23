@@ -18,7 +18,7 @@ Model: Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz
 
 Cores: 1
 
-Mhz: 2593.907000
+Mhz: 2593.906000
 
 CacheSize: 36608
 
@@ -30,69 +30,19 @@ Model: Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz
 
 Cores: 1
 
-Mhz: 2593.907000
+Mhz: 2593.906000
 
 CacheSize: 36608
 
 Microcode: 0xffffffff
 
-## alloc_1.5k
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 134.227213 | 36.241942 | 3174.301825 | 18.232287 |
-| 1.18 | 135.347770 | 6.104113 | 4348.324100 | 3.327691 |
-| 1.19beta1 | 275.784523 | 6.466728 | 4347.303243 | 0.975965 |
-
-![alloc_1.5k](./78691b2f49e91d20e4fc03ba30be4e2828c5acd9ddd58fbf8d3e5b21bed97b8d.png)
-
-## Fibonacci
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 131.343913 | 3.673537 | 3901.127035 | 1.239971 |
-| 1.18 | 133.928591 | 2.261685 | 4013.298158 | 3.018516 |
-| 1.19beta1 | 276.562147 | 2.723162 | 4012.658598 | 2.160671 |
-
-![Fibonacci](./016be0f0bc3aacaadb309d0adc2b1024980e3775065236c79ab0d186380b4f83.png)
-
-## MergeSort
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 136.902362 | 5.403329 | 6088.137938 | 99.261905 |
-| 1.18 | 140.368933 | 8.368330 | 5903.053312 | 76.149588 |
-| 1.19beta1 | 286.952811 | 5.990615 | 7347.839065 | 91.378188 |
-
-![MergeSort](./619024e898d5dcaadcf23d3b2f3a22d86c871a7b76284aafd1eb289200c2e49a.png)
-
-## regexp_Compile
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 165.423900 | 10.049688 | 1095.413310 | 3.959795 |
-| 1.18 | 169.233220 | 5.465317 | 1154.388584 | 5.027723 |
-| 1.19beta1 | 311.677400 | 3.794247 | 1160.086310 | 6.551528 |
-
-![regexp_Compile](./b52c0e0ed5be138613a41e4ac82fa786572d3635aa9d38700ddd7703cdee0d33.png)
-
-## regexp_FindAllString
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 172.297013 | 3.524127 | 2359.916250 | 9.425444 |
-| 1.18 | 176.715973 | 3.295948 | 2365.007296 | 12.629223 |
-| 1.19beta1 | 311.604977 | 4.764565 | 2242.967424 | 5.773166 |
-
-![regexp_FindAllString](./efbe67306d3132a2dcfa4c74e1ad1b2c51fd7423e2e5a5e3e4878c640f2a526d.png)
-
 ## Sort_Random
 
 | Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
 | ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 147.248857 | 3.477525 | 5012.297084 | 2.183742 |
-| 1.18 | 156.471246 | 5.848280 | 5030.704846 | 2.283094 |
-| 1.19beta1 | 290.824400 | 8.825430 | 5023.028924 | 1.501552 |
+| 1.17 | 159.856584 | 2.879386 | 5019.795490 | 1.644943 |
+| 1.18 | 164.250064 | 4.161797 | 5033.865998 | 1.771644 |
+| 1.19beta1 | 317.106388 | 3.755534 | 5029.123192 | 1.698958 |
 
 ![Sort_Random](./7a0a58c9e3b5825d5c91544e7e01469f5aeb4b3af178a861bf75b9731df604c0.png)
 
@@ -100,9 +50,9 @@ Microcode: 0xffffffff
 
 | Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
 | ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 139.520026 | 4.770276 | 3714.625017 | 1.625947 |
-| 1.18 | 143.700053 | 1.352668 | 3574.692983 | 1.282230 |
-| 1.19beta1 | 281.209982 | 3.209932 | 369.559393 | 0.414870 |
+| 1.17 | 147.199486 | 2.999353 | 3719.427214 | 2.242194 |
+| 1.18 | 152.491865 | 2.865855 | 3580.015490 | 1.792752 |
+| 1.19beta1 | 310.926674 | 6.825579 | 370.052666 | 0.536161 |
 
 ![Sort_Reversed](./4f239a2e282214a7bf7c377fcf6bb4540d0934ce7ce00fadb75e8eeeb38d843d.png)
 
@@ -110,9 +60,59 @@ Microcode: 0xffffffff
 
 | Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
 | ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 199.797980 | 6.400877 | 5205.576972 | 2.891593 |
-| 1.18 | 200.248437 | 4.230596 | 5723.687454 | 2.533072 |
-| 1.19beta1 | 337.917994 | 15.032096 | 3272.039380 | 1.796956 |
+| 1.17 | 215.038207 | 4.195223 | 5214.994766 | 4.110874 |
+| 1.18 | 219.888183 | 9.265658 | 5731.721851 | 2.693217 |
+| 1.19beta1 | 374.961073 | 18.726131 | 3276.956567 | 1.513825 |
 
 ![switch_case](./725e73000e499ff7420aa0f5b1c7dfb379e3381a122e47e5d482cb597e03166a.png)
+
+## alloc_1.5k
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 134.626254 | 2.672496 | 3290.378230 | 38.277531 |
+| 1.18 | 143.689879 | 3.937408 | 4353.873814 | 1.314177 |
+| 1.19beta1 | 304.420236 | 7.049001 | 4351.520157 | 2.027315 |
+
+![alloc_1.5k](./78691b2f49e91d20e4fc03ba30be4e2828c5acd9ddd58fbf8d3e5b21bed97b8d.png)
+
+## Fibonacci
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 133.716998 | 3.745606 | 3905.907496 | 1.294716 |
+| 1.18 | 140.360861 | 2.681159 | 4017.653210 | 4.103295 |
+| 1.19beta1 | 298.728782 | 5.534966 | 4017.340821 | 1.101720 |
+
+![Fibonacci](./016be0f0bc3aacaadb309d0adc2b1024980e3775065236c79ab0d186380b4f83.png)
+
+## MergeSort
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 139.448529 | 2.198415 | 6981.564871 | 126.778922 |
+| 1.18 | 145.941812 | 7.788279 | 6726.343674 | 62.896768 |
+| 1.19beta1 | 306.577937 | 3.680184 | 8385.738930 | 121.072950 |
+
+![MergeSort](./619024e898d5dcaadcf23d3b2f3a22d86c871a7b76284aafd1eb289200c2e49a.png)
+
+## regexp_Compile
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 177.605651 | 4.835891 | 1142.967441 | 10.735899 |
+| 1.18 | 179.971174 | 2.521681 | 1195.028439 | 11.578506 |
+| 1.19beta1 | 342.393686 | 5.856475 | 1218.638688 | 11.894412 |
+
+![regexp_Compile](./b52c0e0ed5be138613a41e4ac82fa786572d3635aa9d38700ddd7703cdee0d33.png)
+
+## regexp_FindAllString
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 181.642097 | 3.765831 | 2389.415276 | 8.474248 |
+| 1.18 | 191.684672 | 2.976975 | 2403.301944 | 9.973820 |
+| 1.19beta1 | 349.510466 | 3.202956 | 2280.877165 | 18.185910 |
+
+![regexp_FindAllString](./efbe67306d3132a2dcfa4c74e1ad1b2c51fd7423e2e5a5e3e4878c640f2a526d.png)
 
