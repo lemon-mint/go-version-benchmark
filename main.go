@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"bytes"
 	"crypto/sha256"
 	"encoding/hex"
 	"encoding/json"
@@ -96,6 +97,20 @@ func DownloadGo(version string) {
 	}
 }
 
+func SetupBenchstat() {
+	if _, err := os.Stat(filepath.Join(GOBIN, "benchstat")); err == nil {
+		return
+	}
+
+	cmd := exec.Command("go", "install", "golang.org/x/perf/cmd/benchstat@latest")
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	err := cmd.Run()
+	if err != nil {
+		panic(err)
+	}
+}
+
 func HashFileName(name string) string {
 	h := sha256.Sum256([]byte(name))
 	return name + "__" + hex.EncodeToString(h[:5])
@@ -142,6 +157,7 @@ func main() {
 	for _, version := range config.Versions {
 		DownloadGo(version)
 	}
+	SetupBenchstat()
 
 	if stat, err := os.Stat(BENCHMARK_DIR); os.IsNotExist(err) {
 		panic("Benchmark directory does not exist.")
@@ -207,6 +223,7 @@ func main() {
 		if minver == "" {
 			minver = "0.0"
 		}
+		var resultFiles []string
 		for _, version := range config.Versions {
 			if version < minver && version != "master" {
 				continue
@@ -222,7 +239,9 @@ func main() {
 				buildTimes = append(buildTimes, buildTime)
 			}
 
-			resultsFile, err := os.Create(filepath.Join(RESULTS_DIR, HashFileName(benchmarkName)+"_"+version+".txt"))
+			fname := filepath.Join(RESULTS_DIR, HashFileName(benchmarkName)+"_"+version+".txt")
+			resultFiles = append(resultFiles, fname)
+			resultsFile, err := os.Create(fname)
 			if err != nil {
 				panic(err)
 			}
@@ -282,6 +301,38 @@ func main() {
 			results[benchmarkName].RunTimes[version] = runTimesFloat
 			rw.Flush()
 			resultsFile.Close()
+		}
+
+		// Run Benchstat.
+		path := filepath.Join(RESULTS_DIR, "benchstat"+"_"+benchmarkName)
+		err = os.MkdirAll(path, 0755)
+		if err != nil {
+			panic(err)
+		}
+		var b bytes.Buffer
+		for i := 0; i < len(resultFiles); i++ {
+			for j := i + 1; j < len(resultFiles); j++ {
+				b.Reset()
+				cmd := exec.Command("benchstat", resultFiles[i], resultFiles[j])
+				cmd.Stdout = &b
+				cmd.Stderr = os.Stderr
+				err := cmd.Run()
+				if err != nil {
+					panic(err)
+				}
+
+				// Write the results to a file.
+				f, err := os.Create(filepath.Join(path, fmt.Sprintf("%d_%d.txt", i, j)))
+				if err != nil {
+					panic(err)
+				}
+				_, err = f.Write(b.Bytes())
+				if err != nil {
+					f.Close()
+					panic(err)
+				}
+				f.Close()
+			}
 		}
 	}
 
