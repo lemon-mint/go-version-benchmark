@@ -1,0 +1,10 @@
+BenchmarkTimeAfterFunc	1	4423013832 ns/op	6228420000 user-ns/op	971552000 sys-ns/op
+BenchmarkTimeAfterFunc	1	5502555904 ns/op	6461217000 user-ns/op	1382188000 sys-ns/op
+BenchmarkTimeAfterFunc	1	4926166556 ns/op	6535864000 user-ns/op	773878000 sys-ns/op
+BenchmarkTimeAfterFunc	1	4225220909 ns/op	5821512000 user-ns/op	863785000 sys-ns/op
+BenchmarkTimeAfterFunc	1	4786301864 ns/op	6174050000 user-ns/op	1138706000 sys-ns/op
+BenchmarkTimeAfterFunc	1	4490835551 ns/op	6010306000 user-ns/op	924662000 sys-ns/op
+BenchmarkTimeAfterFunc	1	5076592564 ns/op	6543259000 user-ns/op	896668000 sys-ns/op
+BenchmarkTimeAfterFunc	1	5693208766 ns/op	6638603000 user-ns/op	1418815000 sys-ns/op
+BenchmarkTimeAfterFunc	1	5533608663 ns/op	6670745000 user-ns/op	1330081000 sys-ns/op
+BenchmarkTimeAfterFunc	1	4749679183 ns/op	6050873000 user-ns/op	801922000 sys-ns/op
