@@ -98,7 +98,7 @@ func DownloadGo(version string) {
 
 func HashFileName(name string) string {
 	h := sha256.Sum256([]byte(name))
-	return hex.EncodeToString(h[:])
+	return name + "__" + hex.EncodeToString(h[:5])
 }
 
 type BenchmarkResult struct {
