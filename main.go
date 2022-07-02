@@ -313,7 +313,7 @@ func main() {
 		for i := 0; i < len(resultFiles); i++ {
 			for j := i + 1; j < len(resultFiles); j++ {
 				b.Reset()
-				cmd := exec.Command("benchstat", resultFiles[i], resultFiles[j])
+				cmd := exec.Command(filepath.Join(GOBIN, "benchstat"), resultFiles[i], resultFiles[j])
 				cmd.Stdout = &b
 				cmd.Stderr = os.Stderr
 				err := cmd.Run()
