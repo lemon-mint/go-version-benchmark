@@ -240,7 +240,7 @@ func main() {
 			}
 
 			fname := filepath.Join(RESULTS_DIR, HashFileName(benchmarkName)+"_"+version+".txt")
-			resultFiles = append(resultFiles, fname)
+			resultFiles = append(resultFiles, HashFileName(benchmarkName)+"_"+version)
 			resultsFile, err := os.Create(fname)
 			if err != nil {
 				panic(err)
@@ -313,7 +313,10 @@ func main() {
 		for i := 0; i < len(resultFiles); i++ {
 			for j := i + 1; j < len(resultFiles); j++ {
 				b.Reset()
-				cmd := exec.Command(filepath.Join(GOBIN, "benchstat"), resultFiles[i], resultFiles[j])
+				cmd := exec.Command(filepath.Join(GOBIN, "benchstat"),
+					filepath.Join(RESULTS_DIR, resultFiles[i]+".txt"),
+					filepath.Join(RESULTS_DIR, resultFiles[j]+".txt"),
+				)
 				cmd.Stdout = &b
 				cmd.Stderr = os.Stderr
 				err := cmd.Run()
@@ -322,7 +325,7 @@ func main() {
 				}
 
 				// Write the results to a file.
-				f, err := os.Create(filepath.Join(path, fmt.Sprintf("%d_%d.txt", i, j)))
+				f, err := os.Create(filepath.Join(path, fmt.Sprintf("%s_%s_%s.txt", resultFiles[i], resultFiles[j], benchmarkName)))
 				if err != nil {
 					panic(err)
 				}
