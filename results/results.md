@@ -14,115 +14,115 @@ Itercount: 10
 
 ### CPU 0
 
-Model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
+Model: Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz
 
 Cores: 1
 
-Mhz: 2793.437000
+Mhz: 2593.907000
 
-CacheSize: 49152
+CacheSize: 36608
 
 Microcode: 0xffffffff
 
 ### CPU 1
 
-Model: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz
+Model: Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz
 
 Cores: 1
 
-Mhz: 2793.437000
+Mhz: 2593.907000
 
-CacheSize: 49152
+CacheSize: 36608
 
 Microcode: 0xffffffff
-
-## MergeSort
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 126.445971 | 4.343474 | 5971.371748 | 43.908024 |
-| 1.18 | 133.532413 | 5.317584 | 5638.886678 | 35.599196 |
-| 1.19beta1 | 272.150836 | 5.412629 | 7006.107745 | 81.990408 |
-
-![MergeSort](./619024e898d5dcaadcf23d3b2f3a22d86c871a7b76284aafd1eb289200c2e49a.png)
 
 ## regexp_Compile
 
 | Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
 | ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 159.905379 | 17.368643 | 1073.386710 | 5.421854 |
-| 1.18 | 171.479875 | 11.475296 | 1130.668635 | 11.727510 |
-| 1.19beta1 | 299.258712 | 6.014528 | 1139.155471 | 6.316724 |
+| 1.17 | 157.685239 | 12.159274 | 1073.622914 | 30.094233 |
+| 1.18 | 171.222941 | 10.661107 | 1068.999192 | 47.918840 |
+| 1.19beta1 | 284.264481 | 6.190756 | 1094.572334 | 31.119427 |
 
-![regexp_Compile](./b52c0e0ed5be138613a41e4ac82fa786572d3635aa9d38700ddd7703cdee0d33.png)
-
-## alloc_1.5k
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 123.246889 | 4.239781 | 3699.514380 | 19.041135 |
-| 1.18 | 131.254476 | 2.523092 | 5218.870049 | 3.120076 |
-| 1.19beta1 | 269.245641 | 3.467836 | 5218.990958 | 0.974535 |
-
-![alloc_1.5k](./78691b2f49e91d20e4fc03ba30be4e2828c5acd9ddd58fbf8d3e5b21bed97b8d.png)
-
-## Fibonacci
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 121.491596 | 9.199736 | 4792.049039 | 0.715373 |
-| 1.18 | 128.280396 | 6.911127 | 4796.623045 | 9.308312 |
-| 1.19beta1 | 265.209260 | 1.328158 | 4796.203515 | 0.904032 |
-
-![Fibonacci](./016be0f0bc3aacaadb309d0adc2b1024980e3775065236c79ab0d186380b4f83.png)
-
-## regexp_FindAllString
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 161.448049 | 2.094880 | 2340.524249 | 12.142399 |
-| 1.18 | 171.944136 | 3.831416 | 2339.708307 | 24.620148 |
-| 1.19beta1 | 313.230059 | 13.724333 | 2195.443536 | 13.101164 |
-
-![regexp_FindAllString](./efbe67306d3132a2dcfa4c74e1ad1b2c51fd7423e2e5a5e3e4878c640f2a526d.png)
-
-## Sort_Random
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 142.295276 | 1.972333 | 6083.362689 | 11.884848 |
-| 1.18 | 149.480147 | 4.265872 | 5975.832518 | 11.959284 |
-| 1.19beta1 | 282.859976 | 2.438320 | 5928.360416 | 7.457862 |
-
-![Sort_Random](./7a0a58c9e3b5825d5c91544e7e01469f5aeb4b3af178a861bf75b9731df604c0.png)
-
-## Sort_Reversed
-
-| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
-| ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 128.821037 | 9.725939 | 3644.798354 | 30.828604 |
-| 1.18 | 140.377492 | 8.457870 | 3543.136103 | 2.775879 |
-| 1.19beta1 | 271.495174 | 3.446811 | 395.341676 | 2.201207 |
-
-![Sort_Reversed](./4f239a2e282214a7bf7c377fcf6bb4540d0934ce7ce00fadb75e8eeeb38d843d.png)
+![regexp_Compile](./regexp_Compile__b52c0e0ed5.png)
 
 ## switch_case
 
 | Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
 | ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 190.897027 | 12.479754 | 5955.346543 | 33.381414 |
-| 1.18 | 197.992204 | 10.933175 | 5906.589013 | 21.148788 |
-| 1.19beta1 | 325.690769 | 8.146437 | 3415.978383 | 1.749769 |
+| 1.17 | 184.433933 | 19.648590 | 4586.629369 | 8.726257 |
+| 1.18 | 195.948617 | 15.956745 | 5045.122380 | 337.211192 |
+| 1.19beta1 | 324.225731 | 17.687850 | 2886.540610 | 155.324352 |
 
-![switch_case](./725e73000e499ff7420aa0f5b1c7dfb379e3381a122e47e5d482cb597e03166a.png)
+![switch_case](./switch_case__725e73000e.png)
+
+## regexp_FindAllString
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 159.254671 | 6.138786 | 2145.326950 | 71.230904 |
+| 1.18 | 170.640170 | 3.452257 | 2127.887838 | 29.924489 |
+| 1.19beta1 | 311.146710 | 4.264449 | 2185.901767 | 48.112095 |
+
+![regexp_FindAllString](./regexp_FindAllString__efbe67306d.png)
+
+## Sort_Random
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 146.495710 | 3.445449 | 4437.500670 | 288.191240 |
+| 1.18 | 153.108250 | 3.618312 | 4446.879859 | 291.073265 |
+| 1.19beta1 | 272.152416 | 5.807848 | 4437.793615 | 175.114711 |
+
+![Sort_Random](./Sort_Random__7a0a58c9e3.png)
+
+## Sort_Reversed
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 128.965312 | 3.415491 | 3280.732516 | 176.780995 |
+| 1.18 | 130.784697 | 10.141244 | 3152.299866 | 10.925121 |
+| 1.19beta1 | 257.151643 | 5.125740 | 325.809398 | 0.881236 |
+
+![Sort_Reversed](./Sort_Reversed__4f239a2e28.png)
 
 ## TimeAfterFunc
 
 | Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
 | ------ | ------ | ------ | ------ | ------ |
-| 1.17 | 143.947149 | 2.340303 | 4540.570155 | 459.796826 |
-| 1.18 | 155.991258 | 85.005565 | 4254.183891 | 853.902550 |
-| 1.19beta1 | 287.659058 | 41.301349 | 4671.111671 | 343.332700 |
+| 1.17 | 146.320156 | 2.686933 | 4856.234210 | 479.039168 |
+| 1.18 | 151.997422 | 118.341087 | 4308.172508 | 550.964742 |
+| 1.19beta1 | 290.514781 | 25.937871 | 5174.301436 | 264.628955 |
 
-![TimeAfterFunc](./b4a2fe2bf5600625b3bbe08e356e7f255f29db9268c853a512b4a253305d979a.png)
+![TimeAfterFunc](./TimeAfterFunc__b4a2fe2bf5.png)
+
+## alloc_1.5k
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 128.249318 | 4.085351 | 3159.141840 | 150.193013 |
+| 1.18 | 138.476986 | 5.283299 | 3919.231607 | 224.690586 |
+| 1.19beta1 | 264.665916 | 6.636673 | 3838.887581 | 1.423564 |
+
+![alloc_1.5k](./alloc_1.5k__78691b2f49.png)
+
+## Fibonacci
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 121.589463 | 10.306477 | 3443.110492 | 140.720625 |
+| 1.18 | 129.175790 | 3.826242 | 3543.239396 | 145.782666 |
+| 1.19beta1 | 262.555654 | 8.501618 | 3536.598761 | 142.179020 |
+
+![Fibonacci](./Fibonacci__016be0f0bc.png)
+
+## MergeSort
+
+| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |
+| ------ | ------ | ------ | ------ | ------ |
+| 1.17 | 126.790264 | 3.824262 | 5971.371189 | 89.751276 |
+| 1.18 | 137.222800 | 3.011121 | 6099.486314 | 100.361356 |
+| 1.19beta1 | 282.004786 | 7.037221 | 7664.124298 | 151.501784 |
+
+![MergeSort](./MergeSort__619024e898.png)
 
