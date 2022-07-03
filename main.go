@@ -254,7 +254,11 @@ func main() {
 			for i := 0; i < config.Itercount; i++ {
 				t := time.Now()
 				Cleanup()
-				program = BuildGoProgram(listName, "go"+version)
+				if version == "gotip" {
+					program = BuildGoProgram(listName, "gotip")
+				} else {
+					program = BuildGoProgram(listName, "go"+version)
+				}
 				buildTime := time.Since(t)
 				buildTimes = append(buildTimes, buildTime)
 			}
