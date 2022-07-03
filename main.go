@@ -68,7 +68,27 @@ func Cleanup() {
 }
 
 func DownloadGo(version string) {
-	if version == "master" {
+	if version == "gotip" {
+		// Download gotip
+		if _, err := os.Stat(filepath.Join(GOBIN, "gotip")); err != nil {
+			// go install golang.org/dl/gotip@latest
+			cmd := exec.Command("go", "install", "golang.org/dl/gotip@latest")
+			cmd.Stdout = os.Stdout
+			cmd.Stderr = os.Stderr
+			err := cmd.Run()
+			if err != nil {
+				panic(err)
+			}
+		}
+
+		// Bootstrap gotip
+		cmd := exec.Command(filepath.Join(GOBIN, "gotip"), "download")
+		cmd.Stdout = os.Stdout
+		cmd.Stderr = os.Stderr
+		err := cmd.Run()
+		if err != nil {
+			panic(err)
+		}
 		return
 	}
 
@@ -225,7 +245,7 @@ func main() {
 		}
 		var resultFiles []string
 		for _, version := range config.Versions {
-			if version < minver && version != "master" {
+			if version < minver && version != "gotip" {
 				continue
 			}
 			var buildTimes []time.Duration
