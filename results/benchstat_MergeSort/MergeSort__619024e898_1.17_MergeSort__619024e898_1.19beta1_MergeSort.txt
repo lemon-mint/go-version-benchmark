@@ -1,8 +1,8 @@
 name       old time/op       new time/op       delta
-MergeSort        6.03s ± 1%        7.01s ± 2%   +16.19%  (p=0.000 n=9+10)
+MergeSort        7.27s ± 2%        8.68s ± 0%   +19.46%  (p=0.000 n=10+8)
 
 name       old user-time/op  new user-time/op  delta
-MergeSort        11.7s ± 2%        12.5s ± 2%    +7.45%  (p=0.000 n=10+10)
+MergeSort        13.8s ± 3%        15.5s ± 1%   +11.99%  (p=0.000 n=10+9)
 
 name       old sys-time/op   new sys-time/op   delta
-MergeSort        166ms ±30%       1085ms ±10%  +552.67%  (p=0.000 n=10+10)
+MergeSort        306ms ± 8%       1304ms ± 6%  +326.28%  (p=0.000 n=9+9)
