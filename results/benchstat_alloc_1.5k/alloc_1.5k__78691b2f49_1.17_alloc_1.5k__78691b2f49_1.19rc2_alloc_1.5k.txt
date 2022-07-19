@@ -1,8 +1,8 @@
 name        old time/op       new time/op       delta
-alloc_1.5k        3.18s ± 1%        2.19s ± 0%  -31.05%  (p=0.000 n=10+8)
+alloc_1.5k        4.02s ± 4%        2.58s ± 1%  -35.81%  (p=0.000 n=10+9)
 
 name        old user-time/op  new user-time/op  delta
-alloc_1.5k        3.63s ± 1%        2.20s ± 0%  -39.50%  (p=0.000 n=8+10)
+alloc_1.5k        4.76s ± 8%        2.58s ± 1%  -45.84%  (p=0.000 n=10+9)
 
 name        old sys-time/op   new sys-time/op   delta
-alloc_1.5k        114ms ±27%         2ms ±233%  -97.88%  (p=0.000 n=10+10)
+alloc_1.5k        418ms ±18%         6ms ±100%  -98.51%  (p=0.000 n=7+9)

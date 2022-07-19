@@ -1,8 +1,8 @@
 name           old time/op       new time/op       delta
-TimeAfterFunc        4.90s ±20%        4.83s ±16%   ~     (p=0.739 n=10+10)
+TimeAfterFunc        4.82s ±11%        5.91s ±25%  +22.62%  (p=0.013 n=9+10)
 
 name           old user-time/op  new user-time/op  delta
-TimeAfterFunc        6.39s ± 9%        6.47s ± 5%   ~     (p=0.853 n=10+10)
+TimeAfterFunc        7.19s ± 7%        8.10s ±13%  +12.71%  (p=0.043 n=9+10)
 
 name           old sys-time/op   new sys-time/op   delta
-TimeAfterFunc        1.01s ±58%        1.00s ±45%   ~     (p=1.000 n=10+10)
+TimeAfterFunc        967ms ±50%       1114ms ±50%     ~     (p=0.353 n=10+10)
