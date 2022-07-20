@@ -1,8 +1,8 @@
 name         old time/op       new time/op       delta
-Sort_Random        5.62s ± 1%        5.76s ± 2%  +2.39%  (p=0.000 n=10+10)
+Sort_Random        4.29s ± 0%        4.26s ± 0%  -0.69%  (p=0.000 n=10+9)
 
 name         old user-time/op  new user-time/op  delta
-Sort_Random        5.62s ± 1%        5.75s ± 2%  +2.35%  (p=0.000 n=10+10)
+Sort_Random        4.29s ± 0%        4.26s ± 0%  -0.67%  (p=0.000 n=10+9)
 
 name         old sys-time/op   new sys-time/op   delta
-Sort_Random       17.6ms ±82%       21.2ms ±89%    ~     (p=0.579 n=10+10)
+Sort_Random      2.80ms ±186%      3.60ms ±122%    ~     (p=0.569 n=10+10)
