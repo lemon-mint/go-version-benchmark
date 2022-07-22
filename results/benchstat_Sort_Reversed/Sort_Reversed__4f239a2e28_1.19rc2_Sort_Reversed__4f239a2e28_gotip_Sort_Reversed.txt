@@ -1,8 +1,8 @@
 name           old time/op       new time/op       delta
-Sort_Reversed        474ms ± 5%        467ms ± 8%   ~     (p=0.280 n=10+10)
+Sort_Reversed        362ms ± 0%        362ms ± 1%      ~     (p=0.515 n=8+10)
 
 name           old user-time/op  new user-time/op  delta
-Sort_Reversed        469ms ± 2%        463ms ± 9%   ~     (p=0.173 n=8+10)
+Sort_Reversed        360ms ± 1%        362ms ± 0%    +0.59%  (p=0.026 n=9+8)
 
 name           old sys-time/op   new sys-time/op   delta
-Sort_Reversed      3.99ms ±103%      4.00ms ±101%   ~     (p=0.970 n=10+10)
+Sort_Reversed      1.99ms ±100%       0.00ms       -100.00%  (p=0.013 n=10+8)
