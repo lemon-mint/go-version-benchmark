@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/montanaflynn/stats v0.6.6
-	github.com/shirou/gopsutil v3.21.11+incompatible
+	github.com/shirou/gopsutil v3.22.6+incompatible
 	github.com/shirou/gopsutil/v3 v3.22.6
 	github.com/wcharczuk/go-chart/v2 v2.1.0
 )
