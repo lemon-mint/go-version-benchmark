@@ -390,7 +390,14 @@ func main() {
 	Cleanup()
 
 	// Make a plot of the results.
-	for benchname, result := range results {
+	var benchnameStrings []string = make([]string, 0, len(results))
+	for key := range results {
+		benchnameStrings = append(benchnameStrings, key)
+	}
+	sort.Strings(benchnameStrings)
+
+	for _, benchname := range benchnameStrings {
+		result := results[benchname]
 		c := chart.BarChart{}
 		c.Title = benchname
 		c.YAxis.Name = "Time (ns)"
