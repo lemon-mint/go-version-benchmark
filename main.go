@@ -498,7 +498,8 @@ func main() {
 		fmt.Fprintf(f, "CacheSize: %d\n\n", cpuinfo[i].CacheSize)
 		fmt.Fprintf(f, "Microcode: %s\n\n", cpuinfo[i].Microcode)
 	}
-	for _, result := range results {
+	for _, name := range benchnameStrings {
+		result := results[name]
 		fmt.Fprintf(f, "## %s\n\n", result.Name)
 		fmt.Fprintf(f, "| Version | Build Time (ms) | Standard Deviation | Run Time (ms) | Standard Deviation |\n")
 		fmt.Fprintf(f, "| ------ | ------ | ------ | ------ | ------ |\n")
