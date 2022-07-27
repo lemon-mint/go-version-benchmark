@@ -1,8 +1,8 @@
 name            old time/op       new time/op       delta
-regexp_Compile        1.22s ± 4%        1.23s ± 2%   ~     (p=0.661 n=10+9)
+regexp_Compile        1.15s ± 1%        1.15s ± 0%   ~     (p=0.133 n=10+9)
 
 name            old user-time/op  new user-time/op  delta
-regexp_Compile        1.27s ± 5%        1.26s ± 3%   ~     (p=0.436 n=10+10)
+regexp_Compile        1.23s ± 3%        1.23s ± 1%   ~     (p=0.968 n=10+9)
 
 name            old sys-time/op   new sys-time/op   delta
-regexp_Compile       61.6ms ±54%       69.8ms ±58%   ~     (p=0.579 n=10+10)
+regexp_Compile       43.0ms ±81%       42.5ms ±18%   ~     (p=0.696 n=10+8)
