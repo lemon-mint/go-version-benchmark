@@ -1,0 +1,10 @@
+BenchmarkGarbage_Collection	1	5628868952 ns/op	10641763000 user-ns/op	87816000 sys-ns/op
+BenchmarkGarbage_Collection	1	5597556935 ns/op	10585253000 user-ns/op	116057000 sys-ns/op
+BenchmarkGarbage_Collection	1	5621017678 ns/op	10640288000 user-ns/op	91898000 sys-ns/op
+BenchmarkGarbage_Collection	1	5610366627 ns/op	10641792000 user-ns/op	119660000 sys-ns/op
+BenchmarkGarbage_Collection	1	5599357538 ns/op	10601748000 user-ns/op	135868000 sys-ns/op
+BenchmarkGarbage_Collection	1	5591967242 ns/op	10628449000 user-ns/op	79733000 sys-ns/op
+BenchmarkGarbage_Collection	1	5626543839 ns/op	10606074000 user-ns/op	147528000 sys-ns/op
+BenchmarkGarbage_Collection	1	5595386830 ns/op	10568909000 user-ns/op	115966000 sys-ns/op
+BenchmarkGarbage_Collection	1	5604803288 ns/op	10556546000 user-ns/op	127958000 sys-ns/op
+BenchmarkGarbage_Collection	1	5456171404 ns/op	10331266000 user-ns/op	111775000 sys-ns/op
