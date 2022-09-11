@@ -6,23 +6,23 @@ L 0 0" style="stroke-width:0;stroke:rgba(255,255,255,1.0);fill:rgba(255,255,255,
 L 927 26
 L 927 305
 L 20 305
-L 20 26" style="stroke-width:0;stroke:rgba(255,255,255,1.0);fill:rgba(255,255,255,1.0)"/><path  d="M 70 113
-L 120 113
+L 20 26" style="stroke-width:0;stroke:rgba(255,255,255,1.0);fill:rgba(255,255,255,1.0)"/><path  d="M 70 122
+L 120 122
 L 120 305
 L 70 305
-L 70 113" style="stroke-width:3;stroke:rgba(106,195,203,1.0);fill:rgba(106,195,203,1.0)"/><path  d="M 220 222
-L 270 222
+L 70 122" style="stroke-width:3;stroke:rgba(106,195,203,1.0);fill:rgba(106,195,203,1.0)"/><path  d="M 220 227
+L 270 227
 L 270 305
 L 220 305
-L 220 222" style="stroke-width:3;stroke:rgba(42,190,137,1.0);fill:rgba(42,190,137,1.0)"/><path  d="M 370 113
-L 420 113
+L 220 227" style="stroke-width:3;stroke:rgba(42,190,137,1.0);fill:rgba(42,190,137,1.0)"/><path  d="M 370 125
+L 420 125
 L 420 305
 L 370 305
-L 370 113" style="stroke-width:3;stroke:rgba(110,128,139,1.0);fill:rgba(110,128,139,1.0)"/><path  d="M 520 218
-L 570 218
+L 370 125" style="stroke-width:3;stroke:rgba(110,128,139,1.0);fill:rgba(110,128,139,1.0)"/><path  d="M 520 122
+L 570 122
 L 570 305
 L 520 305
-L 520 218" style="stroke-width:3;stroke:rgba(240,174,90,1.0);fill:rgba(240,174,90,1.0)"/><path  d="M 20 305
+L 520 122" style="stroke-width:3;stroke:rgba(240,174,90,1.0);fill:rgba(240,174,90,1.0)"/><path  d="M 20 305
 L 927 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><path  d="M 20 305
 L 20 310" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="82" y="327" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">1.17</text><path  d="M 170 305
 L 170 310" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="232" y="327" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">1.18</text><path  d="M 320 305
@@ -30,12 +30,12 @@ L 320 310" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="
 L 470 310" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="530" y="327" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">gotip</text><path  d="M 927 26
 L 927 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><path  d="M 927 305
 L 932 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><path  d="M 927 305
-L 932 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="311" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">2599.26</text><path  d="M 927 269
-L 932 269" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="275" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">3769.26</text><path  d="M 927 235
-L 932 235" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="241" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">4929.26</text><path  d="M 927 200
-L 932 200" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="206" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">6089.26</text><path  d="M 927 165
-L 932 165" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="171" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">7249.26</text><path  d="M 927 130
-L 932 130" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="136" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">8409.26</text><path  d="M 927 95
-L 932 95" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="101" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">9579.26</text><path  d="M 927 60
-L 932 60" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="66" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">10739.26</text><path  d="M 927 26
-L 932 26" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="32" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">11892.67</text><text x="446" y="25" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:15.3px;font-family:'Roboto Medium',sans-serif">Goroutine_Creation</text></svg>
+L 932 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="311" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">3139.62</text><path  d="M 927 269
+L 932 269" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="275" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">4639.62</text><path  d="M 927 233
+L 932 233" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="239" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">6139.62</text><path  d="M 927 199
+L 932 199" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="205" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">7539.62</text><path  d="M 927 163
+L 932 163" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="169" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">9039.62</text><path  d="M 927 130
+L 932 130" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="136" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">10439.62</text><path  d="M 927 94
+L 932 94" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="100" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">11939.62</text><path  d="M 927 58
+L 932 58" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="64" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">13439.62</text><path  d="M 927 26
+L 932 26" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="942" y="32" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">14799.26</text><text x="446" y="25" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:15.3px;font-family:'Roboto Medium',sans-serif">Goroutine_Creation</text></svg>
