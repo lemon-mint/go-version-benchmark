@@ -1,8 +1,8 @@
 name                old time/op       new time/op       delta
-Goroutine_Creation        10.5s ± 1%        10.7s ± 1%   +1.55%  (p=0.000 n=10+10)
+Goroutine_Creation        8.40s ± 1%        8.47s ± 1%   +0.83%  (p=0.004 n=9+9)
 
 name                old user-time/op  new user-time/op  delta
-Goroutine_Creation        20.9s ± 0%        21.1s ± 1%   +1.20%  (p=0.000 n=10+10)
+Goroutine_Creation        16.7s ± 1%        16.7s ± 1%   +0.52%  (p=0.009 n=10+8)
 
 name                old sys-time/op   new sys-time/op   delta
-Goroutine_Creation       55.0ms ±38%       91.6ms ±17%  +66.43%  (p=0.000 n=9+8)
+Goroutine_Creation       74.8ms ±31%      113.0ms ±20%  +51.13%  (p=0.000 n=10+9)
