@@ -6,23 +6,23 @@ L 0 0" style="stroke-width:0;stroke:rgba(255,255,255,1.0);fill:rgba(255,255,255,
 L 934 26
 L 934 305
 L 20 305
-L 20 26" style="stroke-width:0;stroke:rgba(255,255,255,1.0);fill:rgba(255,255,255,1.0)"/><path  d="M 70 174
-L 120 174
+L 20 26" style="stroke-width:0;stroke:rgba(255,255,255,1.0);fill:rgba(255,255,255,1.0)"/><path  d="M 70 173
+L 120 173
 L 120 305
 L 70 305
-L 70 174" style="stroke-width:3;stroke:rgba(106,195,203,1.0);fill:rgba(106,195,203,1.0)"/><path  d="M 220 209
-L 270 209
+L 70 173" style="stroke-width:3;stroke:rgba(106,195,203,1.0);fill:rgba(106,195,203,1.0)"/><path  d="M 220 161
+L 270 161
 L 270 305
 L 220 305
-L 220 209" style="stroke-width:3;stroke:rgba(42,190,137,1.0);fill:rgba(42,190,137,1.0)"/><path  d="M 370 185
-L 420 185
+L 220 161" style="stroke-width:3;stroke:rgba(42,190,137,1.0);fill:rgba(42,190,137,1.0)"/><path  d="M 370 153
+L 420 153
 L 420 305
 L 370 305
-L 370 185" style="stroke-width:3;stroke:rgba(110,128,139,1.0);fill:rgba(110,128,139,1.0)"/><path  d="M 520 165
-L 570 165
+L 370 153" style="stroke-width:3;stroke:rgba(110,128,139,1.0);fill:rgba(110,128,139,1.0)"/><path  d="M 520 153
+L 570 153
 L 570 305
 L 520 305
-L 520 165" style="stroke-width:3;stroke:rgba(240,174,90,1.0);fill:rgba(240,174,90,1.0)"/><path  d="M 20 305
+L 520 153" style="stroke-width:3;stroke:rgba(240,174,90,1.0);fill:rgba(240,174,90,1.0)"/><path  d="M 20 305
 L 934 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><path  d="M 20 305
 L 20 310" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="82" y="327" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">1.17</text><path  d="M 170 305
 L 170 310" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="232" y="327" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">1.18</text><path  d="M 320 305
@@ -30,12 +30,12 @@ L 320 310" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="
 L 470 310" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="530" y="327" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">gotip</text><path  d="M 934 26
 L 934 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><path  d="M 934 305
 L 939 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><path  d="M 934 305
-L 939 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="311" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">1876.66</text><path  d="M 934 270
-L 939 270" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="276" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">2796.66</text><path  d="M 934 235
-L 939 235" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="241" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">3716.66</text><path  d="M 934 200
-L 939 200" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="206" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">4636.66</text><path  d="M 934 165
-L 939 165" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="171" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">5556.66</text><path  d="M 934 130
-L 939 130" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="136" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">6466.66</text><path  d="M 934 95
-L 939 95" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="101" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">7386.66</text><path  d="M 934 60
-L 939 60" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="66" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">8306.66</text><path  d="M 934 26
-L 939 26" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="32" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">9217.71</text><text x="461" y="25" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:15.3px;font-family:'Roboto Medium',sans-serif">TimeAfterFunc</text></svg>
+L 939 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="311" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">1596.45</text><path  d="M 934 269
+L 939 269" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="275" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">2416.45</text><path  d="M 934 235
+L 939 235" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="241" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">3226.45</text><path  d="M 934 200
+L 939 200" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="206" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">4046.45</text><path  d="M 934 165
+L 939 165" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="171" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">4856.45</text><path  d="M 934 130
+L 939 130" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="136" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">5676.45</text><path  d="M 934 95
+L 939 95" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="101" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">6486.45</text><path  d="M 934 60
+L 939 60" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="66" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">7306.45</text><path  d="M 934 26
+L 939 26" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="32" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">8115.91</text><text x="461" y="25" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:15.3px;font-family:'Roboto Medium',sans-serif">TimeAfterFunc</text></svg>
