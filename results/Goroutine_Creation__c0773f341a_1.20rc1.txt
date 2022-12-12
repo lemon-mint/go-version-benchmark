@@ -1,0 +1,10 @@
+BenchmarkGoroutine_Creation	1	9138580640 ns/op	18024386000 user-ns/op	60174000 sys-ns/op
+BenchmarkGoroutine_Creation	1	8983959755 ns/op	17797831000 user-ns/op	80026000 sys-ns/op
+BenchmarkGoroutine_Creation	1	8996664678 ns/op	17797383000 user-ns/op	47964000 sys-ns/op
+BenchmarkGoroutine_Creation	1	9103228418 ns/op	17966956000 user-ns/op	80013000 sys-ns/op
+BenchmarkGoroutine_Creation	1	8999099216 ns/op	17843462000 user-ns/op	43929000 sys-ns/op
+BenchmarkGoroutine_Creation	1	8966748966 ns/op	17741408000 user-ns/op	72201000 sys-ns/op
+BenchmarkGoroutine_Creation	1	8917253759 ns/op	17639153000 user-ns/op	76065000 sys-ns/op
+BenchmarkGoroutine_Creation	1	8965409736 ns/op	17778157000 user-ns/op	51982000 sys-ns/op
+BenchmarkGoroutine_Creation	1	8936876949 ns/op	17679832000 user-ns/op	68076000 sys-ns/op
+BenchmarkGoroutine_Creation	1	9091020174 ns/op	17934728000 user-ns/op	75859000 sys-ns/op
