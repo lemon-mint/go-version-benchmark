@@ -1,8 +1,8 @@
 name         old time/op       new time/op       delta
-switch_case        5.21s ± 0%        5.72s ± 0%  +9.91%  (p=0.000 n=10+10)
+switch_case        5.21s ± 0%        5.73s ± 0%   +9.96%  (p=0.000 n=10+10)
 
 name         old user-time/op  new user-time/op  delta
-switch_case        5.21s ± 0%        5.73s ± 0%  +9.95%  (p=0.000 n=10+10)
+switch_case        5.21s ± 0%        5.73s ± 0%  +10.02%  (p=0.000 n=8+9)
 
 name         old sys-time/op   new sys-time/op   delta
-switch_case      9.21ms ±161%      8.00ms ±100%    ~     (p=0.753 n=10+10)
+switch_case       5.34ms ±50%      4.89ms ±100%     ~     (p=0.947 n=9+9)
