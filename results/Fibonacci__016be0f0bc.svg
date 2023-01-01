@@ -6,27 +6,27 @@ L 0 0" style="stroke-width:0;stroke:rgba(255,255,255,1.0);fill:rgba(255,255,255,
 L 934 26
 L 934 305
 L 20 305
-L 20 26" style="stroke-width:0;stroke:rgba(255,255,255,1.0);fill:rgba(255,255,255,1.0)"/><path  d="M 70 141
-L 120 141
+L 20 26" style="stroke-width:0;stroke:rgba(255,255,255,1.0);fill:rgba(255,255,255,1.0)"/><path  d="M 70 135
+L 120 135
 L 120 305
 L 70 305
-L 70 141" style="stroke-width:3;stroke:rgba(106,195,203,1.0);fill:rgba(106,195,203,1.0)"/><path  d="M 220 130
-L 270 130
+L 70 135" style="stroke-width:3;stroke:rgba(106,195,203,1.0);fill:rgba(106,195,203,1.0)"/><path  d="M 220 140
+L 270 140
 L 270 305
 L 220 305
-L 220 130" style="stroke-width:3;stroke:rgba(42,190,137,1.0);fill:rgba(42,190,137,1.0)"/><path  d="M 370 142
-L 420 142
+L 220 140" style="stroke-width:3;stroke:rgba(42,190,137,1.0);fill:rgba(42,190,137,1.0)"/><path  d="M 370 138
+L 420 138
 L 420 305
 L 370 305
-L 370 142" style="stroke-width:3;stroke:rgba(110,128,139,1.0);fill:rgba(110,128,139,1.0)"/><path  d="M 520 138
-L 570 138
+L 370 138" style="stroke-width:3;stroke:rgba(110,128,139,1.0);fill:rgba(110,128,139,1.0)"/><path  d="M 520 135
+L 570 135
 L 570 305
 L 520 305
-L 520 138" style="stroke-width:3;stroke:rgba(240,174,90,1.0);fill:rgba(240,174,90,1.0)"/><path  d="M 670 139
-L 720 139
+L 520 135" style="stroke-width:3;stroke:rgba(240,174,90,1.0);fill:rgba(240,174,90,1.0)"/><path  d="M 670 136
+L 720 136
 L 720 305
 L 670 305
-L 670 139" style="stroke-width:3;stroke:rgba(0,116,217,1.0);fill:rgba(0,116,217,1.0)"/><path  d="M 20 305
+L 670 136" style="stroke-width:3;stroke:rgba(0,116,217,1.0);fill:rgba(0,116,217,1.0)"/><path  d="M 20 305
 L 934 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><path  d="M 20 305
 L 20 310" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="82" y="327" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">1.17</text><path  d="M 170 305
 L 170 310" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="232" y="327" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">1.18</text><path  d="M 320 305
@@ -35,12 +35,12 @@ L 470 310" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="
 L 620 310" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="680" y="327" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">gotip</text><path  d="M 934 26
 L 934 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><path  d="M 934 305
 L 939 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><path  d="M 934 305
-L 939 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="311" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">2259.60</text><path  d="M 934 269
-L 939 269" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="275" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">2759.60</text><path  d="M 934 234
-L 939 234" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="240" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">3249.60</text><path  d="M 934 199
-L 939 199" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="205" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">3739.60</text><path  d="M 934 165
-L 939 165" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="171" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">4229.60</text><path  d="M 934 130
-L 939 130" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="136" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">4719.60</text><path  d="M 934 95
-L 939 95" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="101" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">5209.60</text><path  d="M 934 60
-L 939 60" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="66" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">5699.60</text><path  d="M 934 26
-L 939 26" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="32" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">6188.82</text><text x="479" y="25" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:15.3px;font-family:'Roboto Medium',sans-serif">Fibonacci</text></svg>
+L 939 305" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="311" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">2239.89</text><path  d="M 934 270
+L 939 270" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="276" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">2729.89</text><path  d="M 934 235
+L 939 235" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="241" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">3219.89</text><path  d="M 934 200
+L 939 200" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="206" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">3709.89</text><path  d="M 934 165
+L 939 165" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="171" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">4199.89</text><path  d="M 934 130
+L 939 130" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="136" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">4689.89</text><path  d="M 934 95
+L 939 95" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="101" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">5179.89</text><path  d="M 934 60
+L 939 60" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="66" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">5669.89</text><path  d="M 934 26
+L 939 26" style="stroke-width:0;stroke:rgba(51,51,51,1.0);fill:none"/><text x="949" y="32" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:12.8px;font-family:'Roboto Medium',sans-serif">6150.60</text><text x="479" y="25" style="stroke-width:0;stroke:none;fill:rgba(51,51,51,1.0);font-size:15.3px;font-family:'Roboto Medium',sans-serif">Fibonacci</text></svg>
