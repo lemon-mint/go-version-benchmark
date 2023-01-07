@@ -1,0 +1,10 @@
+BenchmarkCGO_CALL_C_FUNC	1	4168465883 ns/op	4150126000 user-ns/op	40097000 sys-ns/op
+BenchmarkCGO_CALL_C_FUNC	1	4161986737 ns/op	4157299000 user-ns/op	24030000 sys-ns/op
+BenchmarkCGO_CALL_C_FUNC	1	4212163136 ns/op	4216783000 user-ns/op	12094000 sys-ns/op
+BenchmarkCGO_CALL_C_FUNC	1	4238983781 ns/op	4233674000 user-ns/op	24054000 sys-ns/op
+BenchmarkCGO_CALL_C_FUNC	1	4165133352 ns/op	4146048000 user-ns/op	31954000 sys-ns/op
+BenchmarkCGO_CALL_C_FUNC	1	4202226268 ns/op	4217174000 user-ns/op	4008000 sys-ns/op
+BenchmarkCGO_CALL_C_FUNC	1	4203269357 ns/op	4210706000 user-ns/op	16071000 sys-ns/op
+BenchmarkCGO_CALL_C_FUNC	1	4185655144 ns/op	4177031000 user-ns/op	27980000 sys-ns/op
+BenchmarkCGO_CALL_C_FUNC	1	4222203538 ns/op	4217557000 user-ns/op	24031000 sys-ns/op
+BenchmarkCGO_CALL_C_FUNC	1	4209742868 ns/op	4197802000 user-ns/op	28065000 sys-ns/op
