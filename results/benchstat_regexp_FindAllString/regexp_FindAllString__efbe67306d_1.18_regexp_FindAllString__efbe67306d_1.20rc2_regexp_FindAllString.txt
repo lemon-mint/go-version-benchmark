@@ -1,8 +1,8 @@
 name                  old time/op       new time/op       delta
-regexp_FindAllString        2.94s ± 2%        2.71s ± 3%   -7.65%  (p=0.000 n=8+10)
+regexp_FindAllString        2.75s ± 2%        2.54s ± 1%  -7.53%  (p=0.000 n=9+9)
 
 name                  old user-time/op  new user-time/op  delta
-regexp_FindAllString        2.94s ± 2%        2.73s ± 2%   -7.39%  (p=0.000 n=10+10)
+regexp_FindAllString        2.77s ± 3%        2.55s ± 2%  -7.90%  (p=0.000 n=10+9)
 
 name                  old sys-time/op   new sys-time/op   delta
-regexp_FindAllString       30.5ms ±57%       17.7ms ±82%  -42.04%  (p=0.004 n=10+10)
+regexp_FindAllString       20.8ms ±61%      18.5ms ±118%    ~     (p=0.481 n=10+10)
