@@ -1,8 +1,8 @@
 name             old time/op       new time/op       delta
-CGO_CALL_C_FUNC        3.52s ± 0%        3.54s ± 0%  +0.65%  (p=0.000 n=9+9)
+CGO_CALL_C_FUNC        4.30s ± 2%        4.13s ± 2%  -3.96%  (p=0.000 n=9+10)
 
 name             old user-time/op  new user-time/op  delta
-CGO_CALL_C_FUNC        3.52s ± 0%        3.55s ± 0%  +0.72%  (p=0.000 n=10+10)
+CGO_CALL_C_FUNC        4.30s ± 3%        4.13s ± 2%  -4.01%  (p=0.000 n=9+10)
 
 name             old sys-time/op   new sys-time/op   delta
-CGO_CALL_C_FUNC      7.61ms ±110%      5.61ms ±114%    ~     (p=0.254 n=10+10)
+CGO_CALL_C_FUNC      19.6ms ±103%       18.4ms ±52%    ~     (p=0.853 n=10+10)
