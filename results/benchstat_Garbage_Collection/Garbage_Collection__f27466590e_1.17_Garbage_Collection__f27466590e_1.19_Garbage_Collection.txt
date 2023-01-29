@@ -1,8 +1,8 @@
 name                old time/op       new time/op       delta
-Garbage_Collection        7.30s ± 1%        7.16s ± 2%  -1.98%  (p=0.000 n=8+10)
+Garbage_Collection        5.70s ± 1%        5.55s ± 1%  -2.72%  (p=0.000 n=9+10)
 
 name                old user-time/op  new user-time/op  delta
-Garbage_Collection        13.7s ± 2%        13.6s ± 2%    ~     (p=0.089 n=10+10)
+Garbage_Collection        10.8s ± 1%        10.5s ± 0%  -2.73%  (p=0.000 n=9+10)
 
 name                old sys-time/op   new sys-time/op   delta
-Garbage_Collection        189ms ±27%        183ms ±22%    ~     (p=0.853 n=10+10)
+Garbage_Collection        112ms ±29%        113ms ±21%    ~     (p=0.912 n=10+10)
