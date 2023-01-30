@@ -255,8 +255,24 @@ func main() {
 				t := time.Now()
 				Cleanup()
 				if version == "gotip" {
+					cmd := exec.Command(filepath.Join(GOBIN, "gotip"), "build", "std")
+					cmd.Stdout = os.Stdout
+					cmd.Stderr = os.Stderr
+					err := cmd.Run()
+					if err != nil {
+						panic(err)
+					}
+					t = time.Now()
 					program = BuildGoProgram(listName, "gotip")
 				} else {
+					cmd := exec.Command(filepath.Join(GOBIN, "go"+version), "build", "std")
+					cmd.Stdout = os.Stdout
+					cmd.Stderr = os.Stderr
+					err := cmd.Run()
+					if err != nil {
+						panic(err)
+					}
+					t = time.Now()
 					program = BuildGoProgram(listName, "go"+version)
 				}
 				buildTime := time.Since(t)
