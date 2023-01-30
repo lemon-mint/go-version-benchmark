@@ -1,0 +1,10 @@
+BenchmarkMergeSort	1	7751491038 ns/op	13856555000 user-ns/op	1026114000 sys-ns/op
+BenchmarkMergeSort	1	7747203222 ns/op	13773165000 user-ns/op	1175513000 sys-ns/op
+BenchmarkMergeSort	1	7681631078 ns/op	13697184000 user-ns/op	1109067000 sys-ns/op
+BenchmarkMergeSort	1	7633763711 ns/op	13710997000 user-ns/op	1014293000 sys-ns/op
+BenchmarkMergeSort	1	7606172158 ns/op	13589585000 user-ns/op	1065692000 sys-ns/op
+BenchmarkMergeSort	1	7657178112 ns/op	13765293000 user-ns/op	1000454000 sys-ns/op
+BenchmarkMergeSort	1	7778783780 ns/op	13916081000 user-ns/op	1090199000 sys-ns/op
+BenchmarkMergeSort	1	7756977527 ns/op	13817645000 user-ns/op	1143778000 sys-ns/op
+BenchmarkMergeSort	1	7670273822 ns/op	13717860000 user-ns/op	1085730000 sys-ns/op
+BenchmarkMergeSort	1	7760986548 ns/op	14001342000 user-ns/op	989508000 sys-ns/op

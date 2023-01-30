@@ -1,0 +1,10 @@
+BenchmarkFibonacci	1	4792040246 ns/op	4785416000 user-ns/op	11983000 sys-ns/op
+BenchmarkFibonacci	1	4792241008 ns/op	4794257000 user-ns/op	4001000 sys-ns/op
+BenchmarkFibonacci	1	4793163687 ns/op	4798674000 user-ns/op	0 sys-ns/op
+BenchmarkFibonacci	1	4792090375 ns/op	4785848000 user-ns/op	11994000 sys-ns/op
+BenchmarkFibonacci	1	4791195509 ns/op	4793130000 user-ns/op	4000000 sys-ns/op
+BenchmarkFibonacci	1	4791621967 ns/op	4793785000 user-ns/op	4001000 sys-ns/op
+BenchmarkFibonacci	1	4794720948 ns/op	4801547000 user-ns/op	0 sys-ns/op
+BenchmarkFibonacci	1	4794006749 ns/op	4792576000 user-ns/op	8014000 sys-ns/op
+BenchmarkFibonacci	1	4792738478 ns/op	4799525000 user-ns/op	0 sys-ns/op
+BenchmarkFibonacci	1	4792043182 ns/op	4795162000 user-ns/op	4005000 sys-ns/op
