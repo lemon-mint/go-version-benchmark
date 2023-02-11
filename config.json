@@ -2,10 +2,9 @@
     "name": "Golang Version Benchmark",
     "itercount": 10,
     "versions": [
-        "1.17",
         "1.18",
         "1.19",
-        "1.20rc3",
+        "1.20",
         "gotip"
     ]
 }
