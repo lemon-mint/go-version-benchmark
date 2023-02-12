@@ -1,8 +1,8 @@
 name       old time/op       new time/op       delta
-Fibonacci        3.87s ± 1%        4.16s ± 3%   +7.38%  (p=0.000 n=8+10)
+Fibonacci        3.90s ± 0%        4.25s ± 0%  +8.81%  (p=0.000 n=10+10)
 
 name       old user-time/op  new user-time/op  delta
-Fibonacci        3.89s ± 4%        4.16s ± 3%   +6.95%  (p=0.000 n=9+10)
+Fibonacci        3.91s ± 0%        4.25s ± 0%  +8.83%  (p=0.000 n=10+9)
 
 name       old sys-time/op   new sys-time/op   delta
-Fibonacci      11.6ms ±107%       4.9ms ±145%  -57.85%  (p=0.036 n=10+9)
+Fibonacci      8.39ms ±185%      5.20ms ±131%    ~     (p=0.365 n=10+10)
