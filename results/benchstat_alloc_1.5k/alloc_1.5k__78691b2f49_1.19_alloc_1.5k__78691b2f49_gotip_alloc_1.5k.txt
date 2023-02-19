@@ -1,8 +1,17 @@
-name        old time/op       new time/op       delta
-alloc_1.5k        2.19s ± 0%        4.35s ± 0%  +98.38%  (p=0.000 n=10+9)
+           │ results/alloc_1.5k__78691b2f49_1.19.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
+           │                 sec/op                  │         sec/op          vs base          │
+alloc_1.5k                                2.669 ± 1%               2.624 ± 2%  ~ (p=0.105 n=10)
 
-name        old user-time/op  new user-time/op  delta
-alloc_1.5k        2.19s ± 0%        4.35s ± 0%  +98.50%  (p=0.000 n=10+10)
+           │ results/alloc_1.5k__78691b2f49_1.19.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
+           │               user-sec/op               │      user-sec/op        vs base          │
+alloc_1.5k                                2.670 ± 1%               2.623 ± 2%  ~ (p=0.063 n=10)
 
-name        old sys-time/op   new sys-time/op   delta
-alloc_1.5k      3.99ms ±200%      7.60ms ±110%     ~     (p=0.064 n=10+10)
+           │ results/alloc_1.5k__78691b2f49_1.19.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
+           │               sys-sec/op                │      sys-sec/op        vs base           │
+alloc_1.5k                              7.992m ± 50%           4.006m ± 201%  ~ (p=0.634 n=8+7)
+
+           │ results/alloc_1.5k__78691b2f49_1.19.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
+           │                sys-ns/op                │      sys-ns/op       vs base             │
+alloc_1.5k                               0.000 ± ∞ ¹           0.000 ± ∞ ¹  ~ (p=1.000 n=2+3) ²
+¹ need >= 6 samples for confidence interval at level 0.95
+² all samples are equal

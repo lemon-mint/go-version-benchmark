@@ -1,8 +1,11 @@
-name       old time/op       new time/op       delta
-MergeSort        8.47s ± 1%        8.92s ± 1%  +5.30%  (p=0.000 n=8+9)
+          │ results/MergeSort__619024e898_1.20.txt │ results/MergeSort__619024e898_gotip.txt │
+          │                 sec/op                 │      sec/op       vs base               │
+MergeSort                               9.935 ± 2%         9.795 ± 1%  -1.41% (p=0.009 n=10)
 
-name       old user-time/op  new user-time/op  delta
-MergeSort        15.2s ± 1%        16.1s ± 2%  +5.87%  (p=0.000 n=9+10)
+          │ results/MergeSort__619024e898_1.20.txt │ results/MergeSort__619024e898_gotip.txt │
+          │              user-sec/op               │      user-sec/op       vs base          │
+MergeSort                               17.70 ± 1%              17.53 ± 1%  ~ (p=0.052 n=10)
 
-name       old sys-time/op   new sys-time/op   delta
-MergeSort        1.10s ± 6%        1.10s ± 4%    ~     (p=0.633 n=10+8)
+          │ results/MergeSort__619024e898_1.20.txt │ results/MergeSort__619024e898_gotip.txt │
+          │               sys-sec/op               │      sys-sec/op        vs base          │
+MergeSort                               1.315 ± 9%              1.284 ± 8%  ~ (p=0.247 n=10)

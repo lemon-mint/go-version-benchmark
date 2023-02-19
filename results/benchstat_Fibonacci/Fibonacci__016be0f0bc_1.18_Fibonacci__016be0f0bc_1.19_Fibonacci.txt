@@ -1,8 +1,16 @@
-name       old time/op       new time/op       delta
-Fibonacci        4.01s ± 0%        3.90s ± 0%  -2.68%  (p=0.000 n=8+10)
+          │ results/Fibonacci__016be0f0bc_1.18.txt │ results/Fibonacci__016be0f0bc_1.19.txt │
+          │                 sec/op                 │     sec/op       vs base               │
+Fibonacci                               4.747 ± 1%        4.670 ± 0%  -1.63% (p=0.001 n=10)
 
-name       old user-time/op  new user-time/op  delta
-Fibonacci        4.01s ± 0%        3.91s ± 0%  -2.69%  (p=0.000 n=10+10)
+          │ results/Fibonacci__016be0f0bc_1.18.txt │ results/Fibonacci__016be0f0bc_1.19.txt │
+          │              user-sec/op               │   user-sec/op    vs base               │
+Fibonacci                               4.747 ± 1%        4.663 ± 1%  -1.78% (p=0.000 n=10)
 
-name       old sys-time/op   new sys-time/op   delta
-Fibonacci      10.8ms ±122%       8.4ms ±185%    ~     (p=0.565 n=10+10)
+          │ results/Fibonacci__016be0f0bc_1.18.txt │ results/Fibonacci__016be0f0bc_1.19.txt │
+          │               sys-sec/op               │     sys-sec/op      vs base            │
+Fibonacci                            11.994m ± 67%        8.009m ± 150%  ~ (p=0.737 n=9+10)
+
+          │ results/Fibonacci__016be0f0bc_1.18.txt │
+          │               sys-ns/op                │
+Fibonacci                              0.000 ± ∞ ¹
+¹ need >= 6 samples for confidence interval at level 0.95

@@ -1,8 +1,11 @@
-name            old time/op       new time/op       delta
-regexp_Compile        1.17s ± 1%        1.14s ± 1%   -2.81%  (p=0.000 n=10+9)
+               │ results/regexp_Compile__b52c0e0ed5_1.19.txt │ results/regexp_Compile__b52c0e0ed5_gotip.txt │
+               │                   sec/op                    │        sec/op          vs base               │
+regexp_Compile                                    1.393 ± 1%              1.366 ± 3%  -1.95% (p=0.029 n=10)
 
-name            old user-time/op  new user-time/op  delta
-regexp_Compile        1.23s ± 1%        1.21s ± 2%   -1.83%  (p=0.000 n=9+10)
+               │ results/regexp_Compile__b52c0e0ed5_1.19.txt │ results/regexp_Compile__b52c0e0ed5_gotip.txt │
+               │                 user-sec/op                 │      user-sec/op       vs base               │
+regexp_Compile                                    1.457 ± 2%              1.426 ± 3%  -2.12% (p=0.029 n=10)
 
-name            old sys-time/op   new sys-time/op   delta
-regexp_Compile       39.9ms ±89%       24.9ms ±63%  -37.55%  (p=0.019 n=10+10)
+               │ results/regexp_Compile__b52c0e0ed5_1.19.txt │ results/regexp_Compile__b52c0e0ed5_gotip.txt │
+               │                 sys-sec/op                  │         sys-sec/op          vs base          │
+regexp_Compile                                  58.19m ± 52%                 54.55m ± 26%  ~ (p=0.436 n=10)

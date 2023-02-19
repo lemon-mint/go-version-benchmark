@@ -1,8 +1,11 @@
-name                old time/op       new time/op       delta
-Garbage_Collection        5.70s ± 1%        6.20s ± 1%  +8.87%  (p=0.000 n=10+10)
+                   │ results/Garbage_Collection__f27466590e_1.18.txt │ results/Garbage_Collection__f27466590e_1.20.txt │
+                   │                     sec/op                      │         sec/op           vs base                │
+Garbage_Collection                                        6.812 ± 1%                7.578 ± 1%  +11.25% (p=0.000 n=10)
 
-name                old user-time/op  new user-time/op  delta
-Garbage_Collection        10.8s ± 0%        11.8s ± 1%  +8.78%  (p=0.000 n=10+10)
+                   │ results/Garbage_Collection__f27466590e_1.18.txt │ results/Garbage_Collection__f27466590e_1.20.txt │
+                   │                   user-sec/op                   │       user-sec/op        vs base                │
+Garbage_Collection                                        12.96 ± 0%                14.36 ± 1%  +10.84% (p=0.000 n=10)
 
-name                old sys-time/op   new sys-time/op   delta
-Garbage_Collection        120ms ±30%        120ms ±17%    ~     (p=0.971 n=10+10)
+                   │ results/Garbage_Collection__f27466590e_1.18.txt │ results/Garbage_Collection__f27466590e_1.20.txt │
+                   │                   sys-sec/op                    │          sys-sec/op            vs base          │
+Garbage_Collection                                      165.9m ± 20%                     176.0m ± 9%  ~ (p=0.247 n=10)

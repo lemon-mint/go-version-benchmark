@@ -1,8 +1,11 @@
-name       old time/op       new time/op       delta
-Fibonacci        3.90s ± 0%        4.25s ± 0%  +8.81%  (p=0.000 n=10+10)
+          │ results/Fibonacci__016be0f0bc_1.19.txt │ results/Fibonacci__016be0f0bc_gotip.txt │
+          │                 sec/op                 │      sec/op       vs base               │
+Fibonacci                               4.670 ± 0%         4.803 ± 1%  +2.85% (p=0.000 n=10)
 
-name       old user-time/op  new user-time/op  delta
-Fibonacci        3.91s ± 0%        4.25s ± 0%  +8.83%  (p=0.000 n=10+9)
+          │ results/Fibonacci__016be0f0bc_1.19.txt │ results/Fibonacci__016be0f0bc_gotip.txt │
+          │              user-sec/op               │   user-sec/op     vs base               │
+Fibonacci                               4.663 ± 1%         4.790 ± 1%  +2.74% (p=0.000 n=10)
 
-name       old sys-time/op   new sys-time/op   delta
-Fibonacci      8.39ms ±185%      5.20ms ±131%    ~     (p=0.365 n=10+10)
+          │ results/Fibonacci__016be0f0bc_1.19.txt │ results/Fibonacci__016be0f0bc_gotip.txt │
+          │               sys-sec/op               │      sys-sec/op        vs base          │
+Fibonacci                            8.009m ± 150%           8.034m ± 149%  ~ (p=0.393 n=10)

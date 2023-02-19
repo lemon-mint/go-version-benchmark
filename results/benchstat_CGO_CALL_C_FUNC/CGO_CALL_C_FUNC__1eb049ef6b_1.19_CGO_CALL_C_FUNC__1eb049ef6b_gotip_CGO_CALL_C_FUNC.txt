@@ -1,8 +1,16 @@
-name             old time/op       new time/op       delta
-CGO_CALL_C_FUNC        3.54s ± 0%        3.58s ± 0%  +1.10%  (p=0.000 n=9+9)
+                │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
+                │                    sec/op                    │         sec/op          vs base               │
+CGO_CALL_C_FUNC                                     4.024 ± 1%               4.183 ± 2%  +3.96% (p=0.000 n=10)
 
-name             old user-time/op  new user-time/op  delta
-CGO_CALL_C_FUNC        3.55s ± 0%        3.59s ± 1%  +1.16%  (p=0.000 n=10+9)
+                │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
+                │                 user-sec/op                  │      user-sec/op        vs base               │
+CGO_CALL_C_FUNC                                     4.033 ± 1%               4.188 ± 2%  +3.86% (p=0.000 n=10)
 
-name             old sys-time/op   new sys-time/op   delta
-CGO_CALL_C_FUNC      8.00ms ±150%      6.81ms ±100%    ~     (p=0.987 n=10+10)
+                │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
+                │                  sys-sec/op                  │        sys-sec/op          vs base            │
+CGO_CALL_C_FUNC                                   11.98m ± 33%               14.03m ± 100%  ~ (p=0.055 n=7+10)
+
+                │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │
+                │                  sys-ns/op                   │
+CGO_CALL_C_FUNC                                    0.000 ± ∞ ¹
+¹ need >= 6 samples for confidence interval at level 0.95

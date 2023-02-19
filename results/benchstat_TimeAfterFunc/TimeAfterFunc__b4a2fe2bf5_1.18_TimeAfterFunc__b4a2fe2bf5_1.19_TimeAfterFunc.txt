@@ -1,8 +1,11 @@
-name           old time/op       new time/op       delta
-TimeAfterFunc        5.11s ±30%        4.72s ± 8%   ~     (p=0.436 n=10+10)
+              │ results/TimeAfterFunc__b4a2fe2bf5_1.18.txt │ results/TimeAfterFunc__b4a2fe2bf5_1.19.txt │
+              │                   sec/op                   │          sec/op           vs base          │
+TimeAfterFunc                                  4.512 ± 34%                4.682 ± 39%  ~ (p=0.353 n=10)
 
-name           old user-time/op  new user-time/op  delta
-TimeAfterFunc        6.46s ±19%        6.33s ± 4%   ~     (p=0.796 n=10+10)
+              │ results/TimeAfterFunc__b4a2fe2bf5_1.18.txt │ results/TimeAfterFunc__b4a2fe2bf5_1.19.txt │
+              │                user-sec/op                 │       user-sec/op         vs base          │
+TimeAfterFunc                                  6.689 ± 11%                7.070 ± 16%  ~ (p=0.123 n=10)
 
-name           old sys-time/op   new sys-time/op   delta
-TimeAfterFunc        1.13s ±72%        0.86s ±37%   ~     (p=0.243 n=9+10)
+              │ results/TimeAfterFunc__b4a2fe2bf5_1.18.txt │ results/TimeAfterFunc__b4a2fe2bf5_1.19.txt │
+              │                 sys-sec/op                 │        sys-sec/op         vs base          │
+TimeAfterFunc                                 778.5m ± 54%               786.7m ± 33%  ~ (p=0.796 n=10)

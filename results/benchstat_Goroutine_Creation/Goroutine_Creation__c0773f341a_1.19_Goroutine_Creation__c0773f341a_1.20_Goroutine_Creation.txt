@@ -1,8 +1,11 @@
-name                old time/op       new time/op       delta
-Goroutine_Creation        8.79s ± 1%        8.87s ± 2%     ~     (p=0.052 n=10+10)
+                   │ results/Goroutine_Creation__c0773f341a_1.19.txt │ results/Goroutine_Creation__c0773f341a_1.20.txt │
+                   │                     sec/op                      │          sec/op           vs base               │
+Goroutine_Creation                                        5.910 ± 2%                 6.023 ± 1%  +1.91% (p=0.023 n=10)
 
-name                old user-time/op  new user-time/op  delta
-Goroutine_Creation        17.4s ± 1%        17.5s ± 1%     ~     (p=0.123 n=10+10)
+                   │ results/Goroutine_Creation__c0773f341a_1.19.txt │ results/Goroutine_Creation__c0773f341a_1.20.txt │
+                   │                   user-sec/op                   │          user-sec/op           vs base          │
+Goroutine_Creation                                        11.66 ± 1%                      11.80 ± 1%  ~ (p=0.052 n=10)
 
-name                old sys-time/op   new sys-time/op   delta
-Goroutine_Creation       55.9ms ±29%       68.8ms ±45%  +23.05%  (p=0.009 n=10+10)
+                   │ results/Goroutine_Creation__c0773f341a_1.19.txt │ results/Goroutine_Creation__c0773f341a_1.20.txt │
+                   │                   sys-sec/op                    │       sys-sec/op         vs base                │
+Goroutine_Creation                                       71.86m ± 6%             102.21m ± 25%  +42.24% (p=0.000 n=10)

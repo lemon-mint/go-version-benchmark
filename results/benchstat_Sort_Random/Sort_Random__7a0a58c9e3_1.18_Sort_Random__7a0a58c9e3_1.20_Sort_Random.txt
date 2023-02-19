@@ -1,8 +1,16 @@
-name         old time/op       new time/op       delta
-Sort_Random        5.03s ± 0%        5.08s ± 0%    +1.04%  (p=0.000 n=10+10)
+            │ results/Sort_Random__7a0a58c9e3_1.18.txt │ results/Sort_Random__7a0a58c9e3_1.20.txt │
+            │                  sec/op                  │      sec/op        vs base               │
+Sort_Random                                 5.889 ± 1%          6.036 ± 1%  +2.50% (p=0.000 n=10)
 
-name         old user-time/op  new user-time/op  delta
-Sort_Random        5.03s ± 0%        5.08s ± 0%    +0.98%  (p=0.000 n=10+10)
+            │ results/Sort_Random__7a0a58c9e3_1.18.txt │ results/Sort_Random__7a0a58c9e3_1.20.txt │
+            │               user-sec/op                │    user-sec/op     vs base               │
+Sort_Random                                 5.897 ± 1%          6.038 ± 1%  +2.39% (p=0.000 n=10)
 
-name         old sys-time/op   new sys-time/op   delta
-Sort_Random      4.80ms ±150%      10.67ms ±62%  +122.23%  (p=0.005 n=10+9)
+            │ results/Sort_Random__7a0a58c9e3_1.18.txt │ results/Sort_Random__7a0a58c9e3_1.20.txt │
+            │                sys-sec/op                │  sys-sec/op    vs base                   │
+Sort_Random                               8.019m ± 50%   22.029m ± 63%  +174.72% (p=0.003 n=9+10)
+
+            │ results/Sort_Random__7a0a58c9e3_1.18.txt │
+            │                sys-ns/op                 │
+Sort_Random                                0.000 ± ∞ ¹
+¹ need >= 6 samples for confidence interval at level 0.95

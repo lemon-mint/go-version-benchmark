@@ -1,8 +1,11 @@
-name                  old time/op       new time/op       delta
-regexp_FindAllString        2.36s ± 1%        2.25s ± 1%  -4.75%  (p=0.000 n=9+10)
+                     │ results/regexp_FindAllString__efbe67306d_1.18.txt │ results/regexp_FindAllString__efbe67306d_1.19.txt │
+                     │                      sec/op                       │           sec/op            vs base               │
+regexp_FindAllString                                          2.966 ± 1%                   2.774 ± 1%  -6.47% (p=0.000 n=10)
 
-name                  old user-time/op  new user-time/op  delta
-regexp_FindAllString        2.39s ± 2%        2.26s ± 1%  -5.13%  (p=0.000 n=10+10)
+                     │ results/regexp_FindAllString__efbe67306d_1.18.txt │ results/regexp_FindAllString__efbe67306d_1.19.txt │
+                     │                    user-sec/op                    │        user-sec/op          vs base               │
+regexp_FindAllString                                          2.974 ± 1%                   2.785 ± 2%  -6.34% (p=0.000 n=10)
 
-name                  old sys-time/op   new sys-time/op   delta
-regexp_FindAllString      13.6ms ±106%       19.2ms ±86%    ~     (p=0.353 n=10+10)
+                     │ results/regexp_FindAllString__efbe67306d_1.18.txt │ results/regexp_FindAllString__efbe67306d_1.19.txt │
+                     │                    sys-sec/op                     │           sys-sec/op             vs base          │
+regexp_FindAllString                                        23.90m ± 67%                      19.99m ± 99%  ~ (p=0.853 n=10)
