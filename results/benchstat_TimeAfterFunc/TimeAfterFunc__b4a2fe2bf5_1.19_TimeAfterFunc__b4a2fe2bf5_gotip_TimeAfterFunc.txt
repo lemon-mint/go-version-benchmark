@@ -1,11 +1,11 @@
               │ results/TimeAfterFunc__b4a2fe2bf5_1.19.txt │ results/TimeAfterFunc__b4a2fe2bf5_gotip.txt │
-              │                   sec/op                   │       sec/op         vs base                │
-TimeAfterFunc                                  4.682 ± 39%           5.338 ± 10%  +14.01% (p=0.019 n=10)
+              │                   sec/op                   │          sec/op            vs base          │
+TimeAfterFunc                                  5.143 ± 12%                  5.198 ± 5%  ~ (p=0.853 n=10)
 
               │ results/TimeAfterFunc__b4a2fe2bf5_1.19.txt │ results/TimeAfterFunc__b4a2fe2bf5_gotip.txt │
-              │                user-sec/op                 │        user-sec/op         vs base          │
-TimeAfterFunc                                  7.070 ± 16%                  7.685 ± 3%  ~ (p=0.123 n=10)
+              │                user-sec/op                 │     user-sec/op       vs base               │
+TimeAfterFunc                                   6.170 ± 6%             6.475 ± 4%  +4.93% (p=0.005 n=10)
 
               │ results/TimeAfterFunc__b4a2fe2bf5_1.19.txt │ results/TimeAfterFunc__b4a2fe2bf5_gotip.txt │
-              │                 sys-sec/op                 │     sys-sec/op       vs base                │
-TimeAfterFunc                                 786.7m ± 33%         1055.9m ± 33%  +34.23% (p=0.004 n=10)
+              │                 sys-sec/op                 │        sys-sec/op          vs base          │
+TimeAfterFunc                                  1.127 ± 48%                 1.007 ± 25%  ~ (p=0.912 n=10)

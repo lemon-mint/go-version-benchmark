@@ -1,16 +1,17 @@
           │ results/Fibonacci__016be0f0bc_1.19.txt │ results/Fibonacci__016be0f0bc_1.20.txt │
           │                 sec/op                 │     sec/op       vs base               │
-Fibonacci                               4.670 ± 0%        4.829 ± 0%  +3.42% (p=0.000 n=10)
+Fibonacci                               4.791 ± 0%        4.791 ± 0%  -0.01% (p=0.035 n=10)
 
           │ results/Fibonacci__016be0f0bc_1.19.txt │ results/Fibonacci__016be0f0bc_1.20.txt │
-          │              user-sec/op               │   user-sec/op    vs base               │
-Fibonacci                               4.663 ± 1%        4.838 ± 1%  +3.77% (p=0.000 n=10)
+          │              user-sec/op               │     user-sec/op       vs base          │
+Fibonacci                               4.790 ± 0%             4.791 ± 0%  ~ (p=0.912 n=10)
 
           │ results/Fibonacci__016be0f0bc_1.19.txt │ results/Fibonacci__016be0f0bc_1.20.txt │
-          │               sys-sec/op               │     sys-sec/op      vs base            │
-Fibonacci                            8.009m ± 150%        12.017m ± 67%  ~ (p=0.264 n=10+8)
+          │               sys-sec/op               │     sys-sec/op       vs base           │
+Fibonacci                            7.994m ± 100%          8.000m ± 50%  ~ (p=0.593 n=7+6)
 
-          │ results/Fibonacci__016be0f0bc_1.20.txt │
-          │               sys-ns/op                │
-Fibonacci                              0.000 ± ∞ ¹
+          │ results/Fibonacci__016be0f0bc_1.19.txt │ results/Fibonacci__016be0f0bc_1.20.txt │
+          │               sys-ns/op                │     sys-ns/op      vs base             │
+Fibonacci                              0.000 ± ∞ ¹         0.000 ± ∞ ¹  ~ (p=1.000 n=3+4) ²
 ¹ need >= 6 samples for confidence interval at level 0.95
+² all samples are equal

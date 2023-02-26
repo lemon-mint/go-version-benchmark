@@ -1,17 +1,18 @@
            │ results/alloc_1.5k__78691b2f49_1.18.txt │ results/alloc_1.5k__78691b2f49_1.20.txt │
-           │                 sec/op                  │      sec/op       vs base               │
-alloc_1.5k                                2.652 ± 2%         2.608 ± 2%  -1.66% (p=0.003 n=10)
+           │                 sec/op                  │     sec/op       vs base                │
+alloc_1.5k                                5.221 ± 0%        2.705 ± 0%  -48.19% (p=0.000 n=10)
 
            │ results/alloc_1.5k__78691b2f49_1.18.txt │ results/alloc_1.5k__78691b2f49_1.20.txt │
-           │               user-sec/op               │   user-sec/op     vs base               │
-alloc_1.5k                                2.651 ± 1%         2.608 ± 2%  -1.60% (p=0.003 n=10)
+           │               user-sec/op               │   user-sec/op    vs base                │
+alloc_1.5k                                5.221 ± 0%        2.707 ± 0%  -48.14% (p=0.000 n=10)
 
            │ results/alloc_1.5k__78691b2f49_1.18.txt │ results/alloc_1.5k__78691b2f49_1.20.txt │
            │               sys-sec/op                │      sys-sec/op       vs base           │
-alloc_1.5k                             7.990m ± 100%          4.014m ± 199%  ~ (p=0.817 n=7+9)
+alloc_1.5k                              5.999m ± 33%           5.997m ± ∞ ¹  ~ (p=0.832 n=8+4)
+¹ need >= 6 samples for confidence interval at level 0.95
 
            │ results/alloc_1.5k__78691b2f49_1.18.txt │ results/alloc_1.5k__78691b2f49_1.20.txt │
            │                sys-ns/op                │     sys-ns/op       vs base             │
-alloc_1.5k                               0.000 ± ∞ ¹          0.000 ± ∞ ¹  ~ (p=1.000 n=3+1) ²
+alloc_1.5k                               0.000 ± ∞ ¹           0.000 ± 0%  ~ (p=1.000 n=2+6) ²
 ¹ need >= 6 samples for confidence interval at level 0.95
 ² all samples are equal
