@@ -1,18 +1,17 @@
               │ results/Sort_Reversed__4f239a2e28_1.20.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
               │                   sec/op                   │        sec/op         vs base               │
-Sort_Reversed                                  361.6m ± 0%            363.2m ± 0%  +0.44% (p=0.000 n=10)
+Sort_Reversed                                  370.4m ± 0%            374.8m ± 0%  +1.17% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.20.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
               │                user-sec/op                 │     user-sec/op       vs base               │
-Sort_Reversed                                  361.8m ± 1%            363.4m ± 1%  +0.44% (p=0.009 n=10)
+Sort_Reversed                                  370.5m ± 1%            375.1m ± 2%  +1.24% (p=0.019 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.20.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
-              │                 sys-ns/op                  │        sys-ns/op          vs base           │
-Sort_Reversed                                   0.000 ± 0%                 0.000 ± 0%  ~ (p=1.000 n=8) ¹
+              │                 sys-ns/op                  │       sys-ns/op         vs base             │
+Sort_Reversed                                   0.000 ± 0%               0.000 ± 0%  ~ (p=1.000 n=7+6) ¹
 ¹ all samples are equal
 
               │ results/Sort_Reversed__4f239a2e28_1.20.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
               │                 sys-sec/op                 │        sys-sec/op         vs base           │
-Sort_Reversed                                 5.923m ± ∞ ¹               3.975m ± ∞ ¹  ~ (p=0.667 n=2) ²
+Sort_Reversed                                 3.983m ± ∞ ¹               5.917m ± ∞ ¹  ~ (p=0.057 n=3+4)
 ¹ need >= 6 samples for confidence interval at level 0.95
-² need >= 4 samples to detect a difference at alpha level 0.05
