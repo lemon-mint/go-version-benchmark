@@ -1,18 +1,17 @@
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.20.txt │
               │                   sec/op                   │       sec/op        vs base                │
-Sort_Reversed                                 3574.0m ± 0%          370.4m ± 0%  -89.64% (p=0.000 n=10)
+Sort_Reversed                                 4538.5m ± 2%          449.9m ± 2%  -90.09% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.20.txt │
               │                user-sec/op                 │    user-sec/op      vs base                │
-Sort_Reversed                                 3577.0m ± 0%          370.5m ± 1%  -89.64% (p=0.000 n=10)
+Sort_Reversed                                 4525.5m ± 2%          449.0m ± 3%  -90.08% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.20.txt │
-              │                 sys-sec/op                 │    sys-sec/op      vs base                 │
-Sort_Reversed                                8.011m ± 100%        3.983m ± ∞ ¹  -50.28% (p=0.017 n=7+3)
+              │                 sys-sec/op                 │    sys-sec/op     vs base                  │
+Sort_Reversed                                12.039m ± 99%       4.003m ± ∞ ¹  -66.75% (p=0.019 n=10+5)
 ¹ need >= 6 samples for confidence interval at level 0.95
 
-              │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.20.txt │
-              │                 sys-ns/op                  │       sys-ns/op        vs base             │
-Sort_Reversed                                  0.000 ± ∞ ¹              0.000 ± 0%  ~ (p=1.000 n=3+7) ²
+              │ results/Sort_Reversed__4f239a2e28_1.20.txt │
+              │                 sys-ns/op                  │
+Sort_Reversed                                  0.000 ± ∞ ¹
 ¹ need >= 6 samples for confidence interval at level 0.95
-² all samples are equal

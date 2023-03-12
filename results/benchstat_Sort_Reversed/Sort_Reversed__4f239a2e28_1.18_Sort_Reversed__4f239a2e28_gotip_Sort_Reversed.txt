@@ -1,18 +1,16 @@
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
               │                   sec/op                   │       sec/op         vs base                │
-Sort_Reversed                                 3574.0m ± 0%           374.8m ± 0%  -89.51% (p=0.000 n=10)
+Sort_Reversed                                 4538.5m ± 2%           427.4m ± 4%  -90.58% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
               │                user-sec/op                 │     user-sec/op      vs base                │
-Sort_Reversed                                 3577.0m ± 0%           375.1m ± 2%  -89.51% (p=0.000 n=10)
+Sort_Reversed                                 4525.5m ± 2%           427.0m ± 5%  -90.56% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
-              │                 sys-sec/op                 │        sys-sec/op         vs base           │
-Sort_Reversed                                8.011m ± 100%               5.917m ± ∞ ¹  ~ (p=0.073 n=7+4)
+              │                 sys-sec/op                 │       sys-sec/op         vs base            │
+Sort_Reversed                                12.039m ± 99%              6.015m ± ∞ ¹  ~ (p=0.106 n=10+4)
 ¹ need >= 6 samples for confidence interval at level 0.95
 
-              │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
-              │                 sys-ns/op                  │       sys-ns/op         vs base             │
-Sort_Reversed                                  0.000 ± ∞ ¹               0.000 ± 0%  ~ (p=1.000 n=3+6) ²
-¹ need >= 6 samples for confidence interval at level 0.95
-² all samples are equal
+              │ results/Sort_Reversed__4f239a2e28_gotip.txt │
+              │                  sys-ns/op                  │
+Sort_Reversed                                    0.000 ± 0%

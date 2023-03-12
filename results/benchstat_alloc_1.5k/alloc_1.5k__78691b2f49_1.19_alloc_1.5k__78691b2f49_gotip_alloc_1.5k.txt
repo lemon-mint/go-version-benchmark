@@ -1,18 +1,17 @@
            │ results/alloc_1.5k__78691b2f49_1.19.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
-           │                 sec/op                  │      sec/op       vs base                │
-alloc_1.5k                                2.192 ± 0%         4.349 ± 0%  +98.36% (p=0.000 n=10)
+           │                 sec/op                  │      sec/op        vs base               │
+alloc_1.5k                                2.699 ± 1%          2.774 ± 2%  +2.77% (p=0.002 n=10)
 
            │ results/alloc_1.5k__78691b2f49_1.19.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
-           │               user-sec/op               │   user-sec/op     vs base                │
-alloc_1.5k                                2.196 ± 0%         4.352 ± 0%  +98.17% (p=0.000 n=10)
+           │               user-sec/op               │    user-sec/op     vs base               │
+alloc_1.5k                                2.681 ± 2%          2.760 ± 2%  +2.97% (p=0.003 n=10)
 
            │ results/alloc_1.5k__78691b2f49_1.19.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
-           │               sys-sec/op                │      sys-sec/op        vs base           │
-alloc_1.5k                              4.008m ± ∞ ¹           8.005m ± 149%  ~ (p=0.117 n=4+9)
-¹ need >= 6 samples for confidence interval at level 0.95
+           │               sys-sec/op                │       sys-sec/op         vs base         │
+alloc_1.5k                              12.03m ± 33%              16.01m ± 50%  ~ (p=0.504 n=9)
 
            │ results/alloc_1.5k__78691b2f49_1.19.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
-           │                sys-ns/op                │      sys-ns/op       vs base             │
-alloc_1.5k                                0.000 ± 0%           0.000 ± ∞ ¹  ~ (p=1.000 n=6+1) ²
+           │                sys-ns/op                │       sys-ns/op        vs base           │
+alloc_1.5k                               0.000 ± ∞ ¹             0.000 ± ∞ ¹  ~ (p=1.000 n=1) ²
 ¹ need >= 6 samples for confidence interval at level 0.95
 ² all samples are equal

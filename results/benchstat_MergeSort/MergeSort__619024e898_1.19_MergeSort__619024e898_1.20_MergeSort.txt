@@ -1,11 +1,11 @@
           │ results/MergeSort__619024e898_1.19.txt │ results/MergeSort__619024e898_1.20.txt │
-          │                 sec/op                 │     sec/op      vs base                │
-MergeSort                               7.636 ± 1%       8.795 ± 1%  +15.17% (p=0.000 n=10)
+          │                 sec/op                 │     sec/op       vs base               │
+MergeSort                               9.508 ± 1%       10.227 ± 0%  +7.57% (p=0.000 n=10)
 
           │ results/MergeSort__619024e898_1.19.txt │ results/MergeSort__619024e898_1.20.txt │
-          │              user-sec/op               │  user-sec/op    vs base                │
-MergeSort                               13.41 ± 1%       15.72 ± 1%  +17.26% (p=0.000 n=10)
+          │              user-sec/op               │   user-sec/op    vs base               │
+MergeSort                               16.47 ± 1%        18.02 ± 1%  +9.38% (p=0.000 n=10)
 
           │ results/MergeSort__619024e898_1.19.txt │ results/MergeSort__619024e898_1.20.txt │
-          │               sys-sec/op               │      sys-sec/op       vs base          │
-MergeSort                               1.226 ± 5%             1.191 ± 8%  ~ (p=0.052 n=10)
+          │               sys-sec/op               │   sys-sec/op     vs base               │
+MergeSort                               1.550 ± 7%        1.425 ± 9%  -8.02% (p=0.019 n=10)
