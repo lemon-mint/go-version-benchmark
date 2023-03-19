@@ -1,11 +1,16 @@
                      │ results/regexp_FindAllString__efbe67306d_1.18.txt │ results/regexp_FindAllString__efbe67306d_gotip.txt │
                      │                      sec/op                       │           sec/op             vs base               │
-regexp_FindAllString                                          3.023 ± 1%                    2.762 ± 1%  -8.63% (p=0.000 n=10)
+regexp_FindAllString                                          2.328 ± 1%                    2.134 ± 1%  -8.32% (p=0.000 n=10)
 
                      │ results/regexp_FindAllString__efbe67306d_1.18.txt │ results/regexp_FindAllString__efbe67306d_gotip.txt │
                      │                    user-sec/op                    │         user-sec/op          vs base               │
-regexp_FindAllString                                          3.032 ± 2%                    2.764 ± 2%  -8.83% (p=0.000 n=10)
+regexp_FindAllString                                          2.346 ± 1%                    2.144 ± 2%  -8.59% (p=0.000 n=10)
 
                      │ results/regexp_FindAllString__efbe67306d_1.18.txt │ results/regexp_FindAllString__efbe67306d_gotip.txt │
-                     │                    sys-sec/op                     │            sys-sec/op             vs base          │
-regexp_FindAllString                                        32.05m ± 63%                       16.07m ± 99%  ~ (p=0.190 n=10)
+                     │                    sys-sec/op                     │           sys-sec/op            vs base            │
+regexp_FindAllString                                        16.02m ± 98%                     11.99m ± 34%  ~ (p=0.113 n=9+10)
+
+                     │ results/regexp_FindAllString__efbe67306d_1.18.txt │
+                     │                     sys-ns/op                     │
+regexp_FindAllString                                         0.000 ± ∞ ¹
+¹ need >= 6 samples for confidence interval at level 0.95

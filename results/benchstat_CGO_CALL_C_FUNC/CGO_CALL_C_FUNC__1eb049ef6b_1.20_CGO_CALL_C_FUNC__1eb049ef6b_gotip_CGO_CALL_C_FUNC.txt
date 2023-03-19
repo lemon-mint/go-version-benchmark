@@ -1,16 +1,16 @@
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.20.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
-                │                    sec/op                    │           sec/op             vs base          │
-CGO_CALL_C_FUNC                                     4.220 ± 1%                    4.257 ± 2%  ~ (p=0.280 n=10)
+                │                    sec/op                    │         sec/op          vs base               │
+CGO_CALL_C_FUNC                                     3.632 ± 0%               3.575 ± 0%  -1.58% (p=0.000 n=10)
 
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.20.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
-                │                 user-sec/op                  │         user-sec/op          vs base          │
-CGO_CALL_C_FUNC                                     4.227 ± 1%                    4.253 ± 2%  ~ (p=0.393 n=10)
+                │                 user-sec/op                  │      user-sec/op        vs base               │
+CGO_CALL_C_FUNC                                     3.637 ± 0%               3.577 ± 0%  -1.64% (p=0.000 n=10)
 
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.20.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
                 │                  sys-sec/op                  │        sys-sec/op          vs base            │
-CGO_CALL_C_FUNC                                   12.08m ± 66%                20.00m ± 80%  ~ (p=0.156 n=9+10)
+CGO_CALL_C_FUNC                                   8.010m ± 50%               8.014m ± 100%  ~ (p=0.264 n=10+8)
 
-                │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.20.txt │
-                │                  sys-ns/op                   │
-CGO_CALL_C_FUNC                                    0.000 ± ∞ ¹
+                │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
+                │                   sys-ns/op                   │
+CGO_CALL_C_FUNC                                     0.000 ± ∞ ¹
 ¹ need >= 6 samples for confidence interval at level 0.95

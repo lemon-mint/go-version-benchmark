@@ -1,18 +1,18 @@
               │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_1.20.txt │
-              │                   sec/op                   │          sec/op           vs base          │
-Sort_Reversed                                  451.2m ± 4%                449.9m ± 2%  ~ (p=0.853 n=10)
+              │                   sec/op                   │       sec/op         vs base               │
+Sort_Reversed                                  361.0m ± 0%           361.8m ± 0%  +0.22% (p=0.002 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_1.20.txt │
               │                user-sec/op                 │       user-sec/op         vs base          │
-Sort_Reversed                                  450.4m ± 4%                449.0m ± 3%  ~ (p=0.579 n=10)
-
-              │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_1.20.txt │
-              │                 sys-sec/op                 │        sys-sec/op          vs base         │
-Sort_Reversed                                 4.009m ± ∞ ¹                4.003m ± ∞ ¹  ~ (p=0.690 n=5)
-¹ need >= 6 samples for confidence interval at level 0.95
+Sort_Reversed                                  361.1m ± 1%                362.2m ± 1%  ~ (p=0.105 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_1.20.txt │
               │                 sys-ns/op                  │        sys-ns/op         vs base           │
-Sort_Reversed                                  0.000 ± ∞ ¹               0.000 ± ∞ ¹  ~ (p=1.000 n=5) ²
+Sort_Reversed                                   0.000 ± 0%                0.000 ± 0%  ~ (p=1.000 n=7) ¹
+¹ all samples are equal
+
+              │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_1.20.txt │
+              │                 sys-sec/op                 │       sys-sec/op         vs base           │
+Sort_Reversed                                 3.972m ± ∞ ¹              3.980m ± ∞ ¹  ~ (p=0.600 n=3) ²
 ¹ need >= 6 samples for confidence interval at level 0.95
-² all samples are equal
+² need >= 4 samples to detect a difference at alpha level 0.05

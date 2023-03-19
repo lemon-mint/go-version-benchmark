@@ -1,11 +1,16 @@
                      │ results/regexp_FindAllString__efbe67306d_1.20.txt │ results/regexp_FindAllString__efbe67306d_gotip.txt │
-                     │                      sec/op                       │              sec/op               vs base          │
-regexp_FindAllString                                          2.775 ± 1%                         2.762 ± 1%  ~ (p=0.529 n=10)
+                     │                      sec/op                       │           sec/op             vs base               │
+regexp_FindAllString                                          2.165 ± 2%                    2.134 ± 1%  -1.41% (p=0.004 n=10)
 
                      │ results/regexp_FindAllString__efbe67306d_1.20.txt │ results/regexp_FindAllString__efbe67306d_gotip.txt │
-                     │                    user-sec/op                    │           user-sec/op             vs base          │
-regexp_FindAllString                                          2.780 ± 1%                         2.764 ± 2%  ~ (p=0.796 n=10)
+                     │                    user-sec/op                    │         user-sec/op          vs base               │
+regexp_FindAllString                                          2.180 ± 2%                    2.144 ± 2%  -1.63% (p=0.002 n=10)
 
                      │ results/regexp_FindAllString__efbe67306d_1.20.txt │ results/regexp_FindAllString__efbe67306d_gotip.txt │
-                     │                    sys-sec/op                     │            sys-sec/op             vs base          │
-regexp_FindAllString                                        20.13m ± 59%                       16.07m ± 99%  ~ (p=0.353 n=10)
+                     │                    sys-sec/op                     │           sys-sec/op            vs base            │
+regexp_FindAllString                                        8.037m ± 98%                    11.989m ± 34%  ~ (p=0.356 n=9+10)
+
+                     │ results/regexp_FindAllString__efbe67306d_1.20.txt │
+                     │                     sys-ns/op                     │
+regexp_FindAllString                                         0.000 ± ∞ ¹
+¹ need >= 6 samples for confidence interval at level 0.95

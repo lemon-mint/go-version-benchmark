@@ -1,14 +1,14 @@
            │ results/alloc_1.5k__78691b2f49_1.18.txt │ results/alloc_1.5k__78691b2f49_1.19.txt │
-           │                 sec/op                  │        sec/op          vs base          │
-alloc_1.5k                                2.710 ± 2%              2.699 ± 1%  ~ (p=0.971 n=10)
+           │                 sec/op                  │     sec/op       vs base                │
+alloc_1.5k                                5.218 ± 0%        2.706 ± 0%  -48.14% (p=0.000 n=10)
 
            │ results/alloc_1.5k__78691b2f49_1.18.txt │ results/alloc_1.5k__78691b2f49_1.19.txt │
-           │               user-sec/op               │      user-sec/op       vs base          │
-alloc_1.5k                                2.706 ± 2%              2.681 ± 2%  ~ (p=1.000 n=10)
+           │               user-sec/op               │   user-sec/op    vs base                │
+alloc_1.5k                                5.219 ± 0%        2.703 ± 0%  -48.21% (p=0.000 n=10)
 
            │ results/alloc_1.5k__78691b2f49_1.18.txt │ results/alloc_1.5k__78691b2f49_1.19.txt │
-           │               sys-sec/op                │    sys-sec/op     vs base               │
-alloc_1.5k                              7.988m ± 50%      12.032m ± 33%  +50.63% (p=0.010 n=9)
+           │               sys-sec/op                │       sys-sec/op        vs base         │
+alloc_1.5k                              8.002m ± 50%             7.993m ± 50%  ~ (p=0.620 n=9)
 
            │ results/alloc_1.5k__78691b2f49_1.18.txt │ results/alloc_1.5k__78691b2f49_1.19.txt │
            │                sys-ns/op                │      sys-ns/op        vs base           │
