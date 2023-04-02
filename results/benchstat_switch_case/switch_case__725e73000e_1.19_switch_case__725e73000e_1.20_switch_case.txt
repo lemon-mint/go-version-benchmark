@@ -1,17 +1,11 @@
             │ results/switch_case__725e73000e_1.19.txt │ results/switch_case__725e73000e_1.20.txt │
-            │                  sec/op                  │         sec/op          vs base          │
-switch_case                                 3.224 ± 0%               3.224 ± 0%  ~ (p=0.529 n=10)
+            │                  sec/op                  │      sec/op        vs base               │
+switch_case                                 3.683 ± 2%          3.656 ± 1%  -0.73% (p=0.019 n=10)
 
             │ results/switch_case__725e73000e_1.19.txt │ results/switch_case__725e73000e_1.20.txt │
-            │               user-sec/op                │      user-sec/op        vs base          │
-switch_case                                 3.224 ± 0%               3.225 ± 0%  ~ (p=0.280 n=10)
+            │               user-sec/op                │    user-sec/op     vs base               │
+switch_case                                 3.675 ± 2%          3.648 ± 1%  -0.75% (p=0.019 n=10)
 
             │ results/switch_case__725e73000e_1.19.txt │ results/switch_case__725e73000e_1.20.txt │
-            │                sys-ns/op                 │       sys-ns/op        vs base           │
-switch_case                                0.000 ± ∞ ¹             0.000 ± ∞ ¹  ~ (p=1.000 n=2) ²
-¹ need >= 6 samples for confidence interval at level 0.95
-² all samples are equal
-
-            │ results/switch_case__725e73000e_1.19.txt │ results/switch_case__725e73000e_1.20.txt │
-            │                sys-sec/op                │       sys-sec/op         vs base         │
-switch_case                               6.000m ± 99%             4.003m ± 200%  ~ (p=0.819 n=8)
+            │                sys-sec/op                │       sys-sec/op        vs base          │
+switch_case                              10.05m ± 100%            14.10m ± 127%  ~ (p=0.481 n=10)

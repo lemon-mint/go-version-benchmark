@@ -1,17 +1,18 @@
               │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
               │                   sec/op                   │        sec/op         vs base               │
-Sort_Reversed                                  369.9m ± 0%            374.6m ± 0%  +1.28% (p=0.000 n=10)
+Sort_Reversed                                  441.3m ± 2%            398.4m ± 3%  -9.71% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
-              │                user-sec/op                 │     user-sec/op       vs base               │
-Sort_Reversed                                  370.1m ± 1%            375.0m ± 1%  +1.31% (p=0.000 n=10)
-
-              │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
-              │                 sys-ns/op                  │       sys-ns/op         vs base             │
-Sort_Reversed                                   0.000 ± 0%               0.000 ± 0%  ~ (p=1.000 n=6+7) ¹
-¹ all samples are equal
+              │                user-sec/op                 │     user-sec/op      vs base                │
+Sort_Reversed                                  441.9m ± 2%           390.2m ± 3%  -11.71% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
               │                 sys-sec/op                 │        sys-sec/op         vs base           │
-Sort_Reversed                                 3.979m ± ∞ ¹               3.996m ± ∞ ¹  ~ (p=0.057 n=4+3)
+Sort_Reversed                                 4.020m ± ∞ ¹               8.120m ± 51%  ~ (p=0.808 n=4+8)
 ¹ need >= 6 samples for confidence interval at level 0.95
+
+              │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
+              │                 sys-ns/op                  │       sys-ns/op         vs base             │
+Sort_Reversed                                   0.000 ± 0%              0.000 ± ∞ ¹  ~ (p=1.000 n=6+2) ²
+¹ need >= 6 samples for confidence interval at level 0.95
+² all samples are equal

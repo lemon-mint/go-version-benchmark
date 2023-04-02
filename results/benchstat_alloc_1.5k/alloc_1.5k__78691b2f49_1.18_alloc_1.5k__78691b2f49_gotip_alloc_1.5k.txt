@@ -1,18 +1,16 @@
            │ results/alloc_1.5k__78691b2f49_1.18.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
-           │                 sec/op                  │      sec/op       vs base                │
-alloc_1.5k                                4.348 ± 0%         2.191 ± 0%  -49.61% (p=0.000 n=10)
+           │                 sec/op                  │         sec/op          vs base          │
+alloc_1.5k                                2.925 ± 2%               2.848 ± 6%  ~ (p=0.280 n=10)
 
            │ results/alloc_1.5k__78691b2f49_1.18.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
-           │               user-sec/op               │   user-sec/op     vs base                │
-alloc_1.5k                                4.353 ± 0%         2.193 ± 0%  -49.62% (p=0.000 n=10)
+           │               user-sec/op               │      user-sec/op        vs base          │
+alloc_1.5k                                2.912 ± 2%               2.851 ± 7%  ~ (p=0.315 n=10)
 
            │ results/alloc_1.5k__78691b2f49_1.18.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
-           │               sys-sec/op                │      sys-sec/op        vs base           │
-alloc_1.5k                             4.006m ± 299%            4.005m ± ∞ ¹  ~ (p=0.531 n=8+5)
+           │               sys-sec/op                │      sys-sec/op       vs base            │
+alloc_1.5k                              12.07m ± 67%           12.07m ± 67%  ~ (p=0.846 n=10+8)
+
+           │ results/alloc_1.5k__78691b2f49_gotip.txt │
+           │                sys-ns/op                 │
+alloc_1.5k                                0.000 ± ∞ ¹
 ¹ need >= 6 samples for confidence interval at level 0.95
-
-           │ results/alloc_1.5k__78691b2f49_1.18.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
-           │                sys-ns/op                │      sys-ns/op       vs base             │
-alloc_1.5k                               0.000 ± ∞ ¹           0.000 ± ∞ ¹  ~ (p=1.000 n=2+5) ²
-¹ need >= 6 samples for confidence interval at level 0.95
-² all samples are equal
