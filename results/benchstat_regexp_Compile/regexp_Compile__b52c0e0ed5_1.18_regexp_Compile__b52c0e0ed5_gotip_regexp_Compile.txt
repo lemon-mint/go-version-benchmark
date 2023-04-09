@@ -1,11 +1,16 @@
                │ results/regexp_Compile__b52c0e0ed5_1.18.txt │ results/regexp_Compile__b52c0e0ed5_gotip.txt │
                │                   sec/op                    │        sec/op          vs base               │
-regexp_Compile                                    1.343 ± 4%              1.262 ± 1%  -6.04% (p=0.000 n=10)
+regexp_Compile                                    1.124 ± 1%              1.096 ± 1%  -2.53% (p=0.000 n=10)
 
                │ results/regexp_Compile__b52c0e0ed5_1.18.txt │ results/regexp_Compile__b52c0e0ed5_gotip.txt │
                │                 user-sec/op                 │      user-sec/op       vs base               │
-regexp_Compile                                    1.402 ± 3%              1.314 ± 3%  -6.26% (p=0.000 n=10)
+regexp_Compile                                    1.215 ± 2%              1.148 ± 1%  -5.47% (p=0.000 n=10)
 
                │ results/regexp_Compile__b52c0e0ed5_1.18.txt │ results/regexp_Compile__b52c0e0ed5_gotip.txt │
-               │                 sys-sec/op                  │         sys-sec/op          vs base          │
-regexp_Compile                                  50.92m ± 21%                 51.76m ± 45%  ~ (p=0.971 n=10)
+               │                 sys-sec/op                  │    sys-sec/op      vs base                   │
+regexp_Compile                                 16.75m ± 146%        38.10m ± 25%  +127.53% (p=0.035 n=9+10)
+
+               │ results/regexp_Compile__b52c0e0ed5_1.18.txt │
+               │                  sys-ns/op                  │
+regexp_Compile                                   0.000 ± ∞ ¹
+¹ need >= 6 samples for confidence interval at level 0.95

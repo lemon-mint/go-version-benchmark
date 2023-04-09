@@ -1,18 +1,17 @@
               │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
               │                   sec/op                   │        sec/op         vs base               │
-Sort_Reversed                                  441.3m ± 2%            398.4m ± 3%  -9.71% (p=0.000 n=10)
+Sort_Reversed                                  361.3m ± 0%            375.3m ± 0%  +3.90% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
-              │                user-sec/op                 │     user-sec/op      vs base                │
-Sort_Reversed                                  441.9m ± 2%           390.2m ± 3%  -11.71% (p=0.000 n=10)
+              │                user-sec/op                 │     user-sec/op       vs base               │
+Sort_Reversed                                  361.4m ± 2%            375.8m ± 1%  +3.96% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
-              │                 sys-sec/op                 │        sys-sec/op         vs base           │
-Sort_Reversed                                 4.020m ± ∞ ¹               8.120m ± 51%  ~ (p=0.808 n=4+8)
+              │                 sys-ns/op                  │        sys-ns/op          vs base           │
+Sort_Reversed                                   0.000 ± 0%                 0.000 ± 0%  ~ (p=1.000 n=6) ¹
+¹ all samples are equal
+
+              │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
+              │                 sys-sec/op                 │         sys-sec/op          vs base         │
+Sort_Reversed                                 5.925m ± ∞ ¹                 3.999m ± ∞ ¹  ~ (p=0.686 n=4)
 ¹ need >= 6 samples for confidence interval at level 0.95
-
-              │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
-              │                 sys-ns/op                  │       sys-ns/op         vs base             │
-Sort_Reversed                                   0.000 ± 0%              0.000 ± ∞ ¹  ~ (p=1.000 n=6+2) ²
-¹ need >= 6 samples for confidence interval at level 0.95
-² all samples are equal

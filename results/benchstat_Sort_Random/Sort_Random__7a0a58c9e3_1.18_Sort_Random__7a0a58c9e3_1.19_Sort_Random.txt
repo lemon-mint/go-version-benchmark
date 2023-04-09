@@ -1,16 +1,17 @@
             │ results/Sort_Random__7a0a58c9e3_1.18.txt │ results/Sort_Random__7a0a58c9e3_1.19.txt │
-            │                  sec/op                  │         sec/op          vs base          │
-Sort_Random                                 5.703 ± 3%               5.551 ± 4%  ~ (p=0.165 n=10)
+            │                  sec/op                  │      sec/op        vs base               │
+Sort_Random                                 5.978 ± 0%          5.925 ± 0%  -0.89% (p=0.000 n=10)
 
             │ results/Sort_Random__7a0a58c9e3_1.18.txt │ results/Sort_Random__7a0a58c9e3_1.19.txt │
-            │               user-sec/op                │      user-sec/op        vs base          │
-Sort_Random                                 5.688 ± 4%               5.543 ± 4%  ~ (p=0.190 n=10)
+            │               user-sec/op                │    user-sec/op     vs base               │
+Sort_Random                                 5.985 ± 0%          5.930 ± 0%  -0.92% (p=0.000 n=10)
 
             │ results/Sort_Random__7a0a58c9e3_1.18.txt │ results/Sort_Random__7a0a58c9e3_1.19.txt │
-            │                sys-sec/op                │      sys-sec/op       vs base            │
-Sort_Random                              16.07m ± 125%           20.04m ± 60%  ~ (p=0.842 n=10+9)
+            │                sys-sec/op                │      sys-sec/op        vs base           │
+Sort_Random                              10.003m ± 60%           4.006m ± 299%  ~ (p=0.556 n=8+9)
 
-            │ results/Sort_Random__7a0a58c9e3_1.19.txt │
-            │                sys-ns/op                 │
-Sort_Random                                0.000 ± ∞ ¹
+            │ results/Sort_Random__7a0a58c9e3_1.18.txt │ results/Sort_Random__7a0a58c9e3_1.19.txt │
+            │                sys-ns/op                 │      sys-ns/op       vs base             │
+Sort_Random                                0.000 ± ∞ ¹           0.000 ± ∞ ¹  ~ (p=1.000 n=2+1) ²
 ¹ need >= 6 samples for confidence interval at level 0.95
+² all samples are equal
