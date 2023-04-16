@@ -1,18 +1,17 @@
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.19.txt │
               │                   sec/op                   │       sec/op        vs base                │
-Sort_Reversed                                 3545.3m ± 0%          361.3m ± 0%  -89.81% (p=0.000 n=10)
+Sort_Reversed                                 3575.6m ± 0%          370.5m ± 0%  -89.64% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.19.txt │
               │                user-sec/op                 │    user-sec/op      vs base                │
-Sort_Reversed                                 3548.3m ± 0%          361.4m ± 2%  -89.81% (p=0.000 n=10)
-
-              │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.19.txt │
-              │                 sys-sec/op                 │       sys-sec/op         vs base           │
-Sort_Reversed                                6.000m ± 167%              5.925m ± ∞ ¹  ~ (p=0.238 n=6+4)
-¹ need >= 6 samples for confidence interval at level 0.95
+Sort_Reversed                                 3580.0m ± 0%          367.7m ± 1%  -89.73% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.19.txt │
               │                 sys-ns/op                  │       sys-ns/op        vs base             │
-Sort_Reversed                                  0.000 ± ∞ ¹              0.000 ± 0%  ~ (p=1.000 n=4+6) ²
+Sort_Reversed                                  0.000 ± ∞ ¹             0.000 ± ∞ ¹  ~ (p=1.000 n=2+4) ²
 ¹ need >= 6 samples for confidence interval at level 0.95
 ² all samples are equal
+
+              │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.19.txt │
+              │                 sys-sec/op                 │    sys-sec/op      vs base                 │
+Sort_Reversed                                6.009m ± 166%        3.995m ± 97%  -33.51% (p=0.040 n=8+6)

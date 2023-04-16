@@ -1,11 +1,11 @@
                      │ results/regexp_FindAllString__efbe67306d_1.19.txt │ results/regexp_FindAllString__efbe67306d_1.20.txt │
                      │                      sec/op                       │             sec/op               vs base          │
-regexp_FindAllString                                          2.229 ± 1%                        2.173 ± 3%  ~ (p=0.089 n=10)
+regexp_FindAllString                                          2.260 ± 1%                        2.240 ± 2%  ~ (p=0.052 n=10)
 
                      │ results/regexp_FindAllString__efbe67306d_1.19.txt │ results/regexp_FindAllString__efbe67306d_1.20.txt │
-                     │                    user-sec/op                    │        user-sec/op          vs base               │
-regexp_FindAllString                                          2.243 ± 1%                   2.191 ± 3%  -2.34% (p=0.043 n=10)
+                     │                    user-sec/op                    │           user-sec/op            vs base          │
+regexp_FindAllString                                          2.274 ± 0%                        2.254 ± 2%  ~ (p=0.075 n=10)
 
                      │ results/regexp_FindAllString__efbe67306d_1.19.txt │ results/regexp_FindAllString__efbe67306d_1.20.txt │
                      │                    sys-sec/op                     │           sys-sec/op             vs base          │
-regexp_FindAllString                                        12.06m ± 66%                      12.04m ± 33%  ~ (p=0.955 n=10)
+regexp_FindAllString                                        16.07m ± 49%                      15.97m ± 50%  ~ (p=0.631 n=10)

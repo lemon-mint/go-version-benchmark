@@ -1,17 +1,16 @@
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
                 │                    sec/op                    │         sec/op          vs base               │
-CGO_CALL_C_FUNC                                     3.618 ± 0%               3.559 ± 0%  -1.62% (p=0.000 n=10)
+CGO_CALL_C_FUNC                                     3.544 ± 0%               3.631 ± 0%  +2.46% (p=0.000 n=10)
 
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
                 │                 user-sec/op                  │      user-sec/op        vs base               │
-CGO_CALL_C_FUNC                                     3.626 ± 0%               3.566 ± 0%  -1.68% (p=0.000 n=10)
+CGO_CALL_C_FUNC                                     3.552 ± 0%               3.630 ± 0%  +2.20% (p=0.000 n=10)
 
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
-                │                  sys-sec/op                  │          sys-sec/op           vs base         │
-CGO_CALL_C_FUNC                                  4.011m ± 100%                   8.014m ± 50%  ~ (p=0.084 n=6)
+                │                  sys-sec/op                  │        sys-sec/op          vs base            │
+CGO_CALL_C_FUNC                                   8.026m ± 50%               12.043m ± 67%  ~ (p=0.055 n=9+10)
 
-                │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
-                │                  sys-ns/op                   │         sys-ns/op           vs base           │
-CGO_CALL_C_FUNC                                    0.000 ± ∞ ¹                  0.000 ± ∞ ¹  ~ (p=1.000 n=4) ²
+                │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │
+                │                  sys-ns/op                   │
+CGO_CALL_C_FUNC                                    0.000 ± ∞ ¹
 ¹ need >= 6 samples for confidence interval at level 0.95
-² all samples are equal
