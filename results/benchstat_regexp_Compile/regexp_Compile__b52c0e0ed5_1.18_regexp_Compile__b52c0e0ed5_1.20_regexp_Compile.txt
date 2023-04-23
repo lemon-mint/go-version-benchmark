@@ -1,11 +1,11 @@
                │ results/regexp_Compile__b52c0e0ed5_1.18.txt │ results/regexp_Compile__b52c0e0ed5_1.20.txt │
                │                   sec/op                    │        sec/op         vs base               │
-regexp_Compile                                    1.163 ± 1%             1.173 ± 1%  +0.88% (p=0.003 n=10)
+regexp_Compile                                    1.152 ± 1%             1.162 ± 2%  +0.85% (p=0.005 n=10)
 
                │ results/regexp_Compile__b52c0e0ed5_1.18.txt │ results/regexp_Compile__b52c0e0ed5_1.20.txt │
                │                 user-sec/op                 │        user-sec/op         vs base          │
-regexp_Compile                                    1.254 ± 1%                  1.228 ± 2%  ~ (p=0.089 n=10)
+regexp_Compile                                    1.237 ± 3%                  1.230 ± 1%  ~ (p=0.481 n=10)
 
                │ results/regexp_Compile__b52c0e0ed5_1.18.txt │ results/regexp_Compile__b52c0e0ed5_1.20.txt │
                │                 sys-sec/op                  │        sys-sec/op          vs base          │
-regexp_Compile                                  28.42m ± 31%                41.22m ± 51%  ~ (p=0.218 n=10)
+regexp_Compile                                  32.04m ± 66%                28.00m ± 54%  ~ (p=0.912 n=10)
