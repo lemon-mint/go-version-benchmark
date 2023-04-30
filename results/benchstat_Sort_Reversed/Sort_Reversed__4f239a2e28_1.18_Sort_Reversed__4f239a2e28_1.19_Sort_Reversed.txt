@@ -1,14 +1,14 @@
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.19.txt │
               │                   sec/op                   │       sec/op        vs base                │
-Sort_Reversed                                 3575.0m ± 0%          370.2m ± 0%  -89.65% (p=0.000 n=10)
+Sort_Reversed                                 4299.9m ± 4%          450.6m ± 2%  -89.52% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.19.txt │
               │                user-sec/op                 │    user-sec/op      vs base                │
-Sort_Reversed                                 3575.2m ± 0%          368.6m ± 1%  -89.69% (p=0.000 n=10)
+Sort_Reversed                                 4306.4m ± 4%          450.7m ± 2%  -89.53% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.19.txt │
-              │                 sys-sec/op                 │    sys-sec/op      vs base                 │
-Sort_Reversed                                 8.003m ± 50%        3.986m ± ∞ ¹  -50.19% (p=0.006 n=9+5)
+              │                 sys-sec/op                 │       sys-sec/op         vs base           │
+Sort_Reversed                                7.999m ± 100%              4.007m ± ∞ ¹  ~ (p=0.172 n=9+5)
 ¹ need >= 6 samples for confidence interval at level 0.95
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.19.txt │
