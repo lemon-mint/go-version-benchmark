@@ -1,11 +1,11 @@
                │ results/regexp_Compile__b52c0e0ed5_1.19.txt │ results/regexp_Compile__b52c0e0ed5_gotip.txt │
-               │                   sec/op                    │        sec/op          vs base               │
-regexp_Compile                                    1.430 ± 3%              1.407 ± 2%  -1.65% (p=0.029 n=10)
+               │                   sec/op                    │           sec/op            vs base          │
+regexp_Compile                                    1.183 ± 2%                   1.168 ± 3%  ~ (p=0.052 n=10)
 
                │ results/regexp_Compile__b52c0e0ed5_1.19.txt │ results/regexp_Compile__b52c0e0ed5_gotip.txt │
-               │                 user-sec/op                 │      user-sec/op       vs base               │
-regexp_Compile                                    1.502 ± 2%              1.480 ± 3%  -1.45% (p=0.019 n=10)
+               │                 user-sec/op                 │        user-sec/op          vs base          │
+regexp_Compile                                    1.236 ± 3%                   1.231 ± 1%  ~ (p=0.436 n=10)
 
                │ results/regexp_Compile__b52c0e0ed5_1.19.txt │ results/regexp_Compile__b52c0e0ed5_gotip.txt │
                │                 sys-sec/op                  │         sys-sec/op          vs base          │
-regexp_Compile                                  52.26m ± 29%                 46.23m ± 31%  ~ (p=0.105 n=10)
+regexp_Compile                                  40.50m ± 79%                 30.49m ± 59%  ~ (p=0.063 n=10)

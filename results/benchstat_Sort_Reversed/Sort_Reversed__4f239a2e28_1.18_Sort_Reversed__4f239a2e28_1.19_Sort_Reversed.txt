@@ -1,18 +1,18 @@
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.19.txt │
               │                   sec/op                   │       sec/op        vs base                │
-Sort_Reversed                                 4299.9m ± 4%          450.6m ± 2%  -89.52% (p=0.000 n=10)
+Sort_Reversed                                 3577.7m ± 0%          370.1m ± 3%  -89.65% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.19.txt │
               │                user-sec/op                 │    user-sec/op      vs base                │
-Sort_Reversed                                 4306.4m ± 4%          450.7m ± 2%  -89.53% (p=0.000 n=10)
+Sort_Reversed                                 3583.5m ± 0%          370.9m ± 1%  -89.65% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.19.txt │
               │                 sys-sec/op                 │       sys-sec/op         vs base           │
-Sort_Reversed                                7.999m ± 100%              4.007m ± ∞ ¹  ~ (p=0.172 n=9+5)
+Sort_Reversed                                8.011m ± 100%              7.899m ± ∞ ¹  ~ (p=0.315 n=7+4)
 ¹ need >= 6 samples for confidence interval at level 0.95
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_1.19.txt │
               │                 sys-ns/op                  │       sys-ns/op        vs base             │
-Sort_Reversed                                  0.000 ± ∞ ¹             0.000 ± ∞ ¹  ~ (p=1.000 n=1+5) ²
+Sort_Reversed                                  0.000 ± ∞ ¹              0.000 ± 0%  ~ (p=1.000 n=3+6) ²
 ¹ need >= 6 samples for confidence interval at level 0.95
 ² all samples are equal
