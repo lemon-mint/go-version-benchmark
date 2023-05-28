@@ -1,14 +1,14 @@
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
                 │                    sec/op                    │         sec/op          vs base               │
-CGO_CALL_C_FUNC                                     3.618 ± 0%               3.651 ± 1%  +0.91% (p=0.023 n=10)
+CGO_CALL_C_FUNC                                     3.620 ± 0%               3.579 ± 0%  -1.14% (p=0.002 n=10)
 
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
                 │                 user-sec/op                  │      user-sec/op        vs base               │
-CGO_CALL_C_FUNC                                     3.621 ± 0%               3.654 ± 1%  +0.89% (p=0.011 n=10)
+CGO_CALL_C_FUNC                                     3.626 ± 0%               3.583 ± 0%  -1.19% (p=0.002 n=10)
 
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_gotip.txt │
                 │                  sys-sec/op                  │        sys-sec/op          vs base            │
-CGO_CALL_C_FUNC                                   8.020m ± 99%                8.009m ± 50%  ~ (p=0.434 n=7+10)
+CGO_CALL_C_FUNC                                  10.000m ± 60%                8.018m ± 99%  ~ (p=0.558 n=8+10)
 
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │
                 │                  sys-ns/op                   │

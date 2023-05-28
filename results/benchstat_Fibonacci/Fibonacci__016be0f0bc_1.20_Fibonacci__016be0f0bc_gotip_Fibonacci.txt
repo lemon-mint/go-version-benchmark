@@ -1,14 +1,14 @@
           │ results/Fibonacci__016be0f0bc_1.20.txt │ results/Fibonacci__016be0f0bc_gotip.txt │
           │                 sec/op                 │      sec/op       vs base               │
-Fibonacci                               4.796 ± 0%         5.206 ± 0%  +8.56% (p=0.000 n=10)
+Fibonacci                               4.796 ± 0%         5.208 ± 0%  +8.58% (p=0.000 n=10)
 
           │ results/Fibonacci__016be0f0bc_1.20.txt │ results/Fibonacci__016be0f0bc_gotip.txt │
           │              user-sec/op               │   user-sec/op     vs base               │
-Fibonacci                               4.798 ± 0%         5.210 ± 0%  +8.58% (p=0.000 n=10)
+Fibonacci                               4.798 ± 0%         5.213 ± 0%  +8.65% (p=0.000 n=10)
 
           │ results/Fibonacci__016be0f0bc_1.20.txt │ results/Fibonacci__016be0f0bc_gotip.txt │
           │               sys-sec/op               │      sys-sec/op       vs base           │
-Fibonacci                             8.005m ± 50%          4.004m ± 300%  ~ (p=0.693 n=8+7)
+Fibonacci                             8.006m ± 50%           8.000m ± 50%  ~ (p=0.242 n=8+7)
 
           │ results/Fibonacci__016be0f0bc_1.20.txt │ results/Fibonacci__016be0f0bc_gotip.txt │
           │               sys-ns/op                │     sys-ns/op       vs base             │

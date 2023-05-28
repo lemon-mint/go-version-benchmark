@@ -1,16 +1,17 @@
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │
                 │                    sec/op                    │        sec/op          vs base               │
-CGO_CALL_C_FUNC                                     3.618 ± 0%              3.614 ± 0%  -0.12% (p=0.002 n=10)
+CGO_CALL_C_FUNC                                     3.620 ± 0%              3.616 ± 0%  -0.12% (p=0.000 n=10)
 
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │
-                │                 user-sec/op                  │        user-sec/op          vs base          │
-CGO_CALL_C_FUNC                                     3.621 ± 0%                   3.619 ± 0%  ~ (p=0.280 n=10)
+                │                 user-sec/op                  │      user-sec/op       vs base               │
+CGO_CALL_C_FUNC                                     3.626 ± 0%              3.616 ± 0%  -0.28% (p=0.011 n=10)
 
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │
-                │                  sys-sec/op                  │     sys-sec/op      vs base                  │
-CGO_CALL_C_FUNC                                   8.020m ± 99%        4.010m ± 199%  -50.00% (p=0.046 n=7+10)
+                │                  sys-sec/op                  │         sys-sec/op           vs base         │
+CGO_CALL_C_FUNC                                   10.00m ± 60%                  12.00m ± 67%  ~ (p=0.123 n=8)
 
-                │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │
-                │                  sys-ns/op                   │
-CGO_CALL_C_FUNC                                    0.000 ± ∞ ¹
+                │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │
+                │                  sys-ns/op                   │         sys-ns/op          vs base           │
+CGO_CALL_C_FUNC                                    0.000 ± ∞ ¹                 0.000 ± ∞ ¹  ~ (p=1.000 n=2) ²
 ¹ need >= 6 samples for confidence interval at level 0.95
+² all samples are equal
