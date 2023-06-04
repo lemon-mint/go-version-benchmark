@@ -1,11 +1,11 @@
                    │ results/Goroutine_Creation__c0773f341a_1.19.txt │ results/Goroutine_Creation__c0773f341a_1.20.txt │
-                   │                     sec/op                      │          sec/op           vs base               │
-Goroutine_Creation                                        10.42 ± 1%                 10.60 ± 1%  +1.74% (p=0.000 n=10)
+                   │                     sec/op                      │            sec/op              vs base          │
+Goroutine_Creation                                        9.001 ± 1%                      9.064 ± 1%  ~ (p=0.123 n=10)
 
                    │ results/Goroutine_Creation__c0773f341a_1.19.txt │ results/Goroutine_Creation__c0773f341a_1.20.txt │
-                   │                   user-sec/op                   │       user-sec/op         vs base               │
-Goroutine_Creation                                        20.70 ± 1%                 20.98 ± 1%  +1.37% (p=0.000 n=10)
+                   │                   user-sec/op                   │          user-sec/op           vs base          │
+Goroutine_Creation                                        17.83 ± 1%                      17.90 ± 0%  ~ (p=0.218 n=10)
 
                    │ results/Goroutine_Creation__c0773f341a_1.19.txt │ results/Goroutine_Creation__c0773f341a_1.20.txt │
                    │                   sys-sec/op                    │          sys-sec/op            vs base          │
-Goroutine_Creation                                      51.96m ± 15%                    64.03m ± 44%  ~ (p=0.315 n=10)
+Goroutine_Creation                                      69.98m ± 48%                    71.96m ± 33%  ~ (p=0.579 n=10)

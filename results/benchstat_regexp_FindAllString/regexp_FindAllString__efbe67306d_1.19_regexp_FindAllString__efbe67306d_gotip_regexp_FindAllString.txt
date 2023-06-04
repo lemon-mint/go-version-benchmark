@@ -1,14 +1,14 @@
                      │ results/regexp_FindAllString__efbe67306d_1.19.txt │ results/regexp_FindAllString__efbe67306d_gotip.txt │
                      │                      sec/op                       │           sec/op             vs base               │
-regexp_FindAllString                                          2.195 ± 1%                    2.166 ± 2%  -1.33% (p=0.011 n=10)
+regexp_FindAllString                                          2.254 ± 1%                    2.189 ± 1%  -2.88% (p=0.000 n=10)
 
                      │ results/regexp_FindAllString__efbe67306d_1.19.txt │ results/regexp_FindAllString__efbe67306d_gotip.txt │
                      │                    user-sec/op                    │         user-sec/op          vs base               │
-regexp_FindAllString                                          2.212 ± 1%                    2.187 ± 2%  -1.15% (p=0.009 n=10)
+regexp_FindAllString                                          2.260 ± 1%                    2.213 ± 1%  -2.07% (p=0.000 n=10)
 
                      │ results/regexp_FindAllString__efbe67306d_1.19.txt │ results/regexp_FindAllString__efbe67306d_gotip.txt │
-                     │                    sys-sec/op                     │        sys-sec/op         vs base                  │
-regexp_FindAllString                                        20.00m ± 40%              12.01m ± 100%  -39.96% (p=0.021 n=8+10)
+                     │                    sys-sec/op                     │           sys-sec/op            vs base            │
+regexp_FindAllString                                        23.88m ± 50%                     21.92m ± 65%  ~ (p=0.968 n=9+10)
 
                      │ results/regexp_FindAllString__efbe67306d_1.19.txt │
                      │                     sys-ns/op                     │
