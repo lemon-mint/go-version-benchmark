@@ -1,16 +1,16 @@
                      │ results/regexp_FindAllString__efbe67306d_1.19.txt │ results/regexp_FindAllString__efbe67306d_gotip.txt │
                      │                      sec/op                       │           sec/op             vs base               │
-regexp_FindAllString                                          2.254 ± 1%                    2.189 ± 1%  -2.88% (p=0.000 n=10)
+regexp_FindAllString                                          2.308 ± 1%                    2.209 ± 1%  -4.32% (p=0.000 n=10)
 
                      │ results/regexp_FindAllString__efbe67306d_1.19.txt │ results/regexp_FindAllString__efbe67306d_gotip.txt │
                      │                    user-sec/op                    │         user-sec/op          vs base               │
-regexp_FindAllString                                          2.260 ± 1%                    2.213 ± 1%  -2.07% (p=0.000 n=10)
+regexp_FindAllString                                          2.325 ± 1%                    2.226 ± 1%  -4.27% (p=0.000 n=10)
 
                      │ results/regexp_FindAllString__efbe67306d_1.19.txt │ results/regexp_FindAllString__efbe67306d_gotip.txt │
                      │                    sys-sec/op                     │           sys-sec/op            vs base            │
-regexp_FindAllString                                        23.88m ± 50%                     21.92m ± 65%  ~ (p=0.968 n=9+10)
+regexp_FindAllString                                       16.012m ± 51%                     8.083m ± 98%  ~ (p=0.113 n=10+9)
 
-                     │ results/regexp_FindAllString__efbe67306d_1.19.txt │
-                     │                     sys-ns/op                     │
-regexp_FindAllString                                         0.000 ± ∞ ¹
+                     │ results/regexp_FindAllString__efbe67306d_gotip.txt │
+                     │                     sys-ns/op                      │
+regexp_FindAllString                                          0.000 ± ∞ ¹
 ¹ need >= 6 samples for confidence interval at level 0.95

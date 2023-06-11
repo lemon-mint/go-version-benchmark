@@ -1,16 +1,17 @@
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │
                 │                    sec/op                    │        sec/op          vs base               │
-CGO_CALL_C_FUNC                                     3.517 ± 0%              3.541 ± 0%  +0.68% (p=0.000 n=10)
+CGO_CALL_C_FUNC                                     3.519 ± 0%              3.547 ± 0%  +0.78% (p=0.000 n=10)
 
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │
                 │                 user-sec/op                  │      user-sec/op       vs base               │
-CGO_CALL_C_FUNC                                     3.524 ± 0%              3.548 ± 0%  +0.69% (p=0.000 n=10)
+CGO_CALL_C_FUNC                                     3.532 ± 0%              3.550 ± 0%  +0.49% (p=0.000 n=10)
 
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │
-                │                  sys-sec/op                  │        sys-sec/op         vs base            │
-CGO_CALL_C_FUNC                                   8.016m ± 50%               8.018m ± 50%  ~ (p=0.917 n=8+10)
+                │                  sys-sec/op                  │        sys-sec/op          vs base           │
+CGO_CALL_C_FUNC                                   10.01m ± 60%                12.04m ± 67%  ~ (p=0.277 n=8+9)
 
-                │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │
-                │                  sys-ns/op                   │
-CGO_CALL_C_FUNC                                    0.000 ± ∞ ¹
+                │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.18.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │
+                │                  sys-ns/op                   │        sys-ns/op         vs base             │
+CGO_CALL_C_FUNC                                    0.000 ± ∞ ¹               0.000 ± ∞ ¹  ~ (p=1.000 n=2+1) ²
 ¹ need >= 6 samples for confidence interval at level 0.95
+² all samples are equal
