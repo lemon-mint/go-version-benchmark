@@ -1,14 +1,14 @@
             │ results/switch_case__725e73000e_1.19.txt │ results/switch_case__725e73000e_1.20.txt │
             │                  sec/op                  │         sec/op          vs base          │
-switch_case                                 3.221 ± 0%               3.221 ± 0%  ~ (p=0.853 n=10)
+switch_case                                 3.221 ± 0%               3.220 ± 0%  ~ (p=0.165 n=10)
 
             │ results/switch_case__725e73000e_1.19.txt │ results/switch_case__725e73000e_1.20.txt │
-            │               user-sec/op                │      user-sec/op        vs base          │
-switch_case                                 3.227 ± 0%               3.226 ± 0%  ~ (p=0.684 n=10)
+            │               user-sec/op                │    user-sec/op     vs base               │
+switch_case                                 3.225 ± 0%          3.217 ± 0%  -0.26% (p=0.002 n=10)
 
             │ results/switch_case__725e73000e_1.19.txt │ results/switch_case__725e73000e_1.20.txt │
             │                sys-sec/op                │      sys-sec/op        vs base           │
-switch_case                              4.011m ± 398%           4.008m ± 100%  ~ (p=0.661 n=7+9)
+switch_case                               8.001m ± 50%            8.020m ± 99%  ~ (p=0.071 n=7+9)
 
             │ results/switch_case__725e73000e_1.19.txt │ results/switch_case__725e73000e_1.20.txt │
             │                sys-ns/op                 │      sys-ns/op       vs base             │
