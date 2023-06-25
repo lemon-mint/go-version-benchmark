@@ -1,18 +1,17 @@
               │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
               │                   sec/op                   │        sec/op         vs base               │
-Sort_Reversed                                  370.3m ± 0%            375.2m ± 0%  +1.33% (p=0.000 n=10)
+Sort_Reversed                                  361.1m ± 0%            371.2m ± 0%  +2.78% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
               │                user-sec/op                 │     user-sec/op       vs base               │
-Sort_Reversed                                  369.2m ± 1%            373.9m ± 1%  +1.28% (p=0.000 n=10)
+Sort_Reversed                                  361.2m ± 1%            371.8m ± 0%  +2.92% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
-              │                 sys-sec/op                 │         sys-sec/op          vs base         │
-Sort_Reversed                                 3.996m ± ∞ ¹                 4.001m ± ∞ ¹  ~ (p=0.881 n=5)
-¹ need >= 6 samples for confidence interval at level 0.95
+              │                 sys-ns/op                  │       sys-ns/op         vs base             │
+Sort_Reversed                                   0.000 ± 0%               0.000 ± 0%  ~ (p=1.000 n=6+9) ¹
+¹ all samples are equal
 
               │ results/Sort_Reversed__4f239a2e28_1.19.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
-              │                 sys-ns/op                  │        sys-ns/op          vs base           │
-Sort_Reversed                                  0.000 ± ∞ ¹                0.000 ± ∞ ¹  ~ (p=1.000 n=5) ²
+              │                 sys-sec/op                 │        sys-sec/op         vs base           │
+Sort_Reversed                                 3.996m ± ∞ ¹               3.992m ± ∞ ¹  ~ (p=1.000 n=4+1)
 ¹ need >= 6 samples for confidence interval at level 0.95
-² all samples are equal

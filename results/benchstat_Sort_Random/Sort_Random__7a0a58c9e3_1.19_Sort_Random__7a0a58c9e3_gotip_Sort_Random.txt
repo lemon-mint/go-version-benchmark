@@ -1,16 +1,17 @@
             │ results/Sort_Random__7a0a58c9e3_1.19.txt │ results/Sort_Random__7a0a58c9e3_gotip.txt │
             │                  sec/op                  │       sec/op        vs base               │
-Sort_Random                                 5.090 ± 0%           5.136 ± 0%  +0.90% (p=0.000 n=10)
+Sort_Random                                 5.919 ± 0%           6.028 ± 0%  +1.85% (p=0.000 n=10)
 
             │ results/Sort_Random__7a0a58c9e3_1.19.txt │ results/Sort_Random__7a0a58c9e3_gotip.txt │
             │               user-sec/op                │    user-sec/op      vs base               │
-Sort_Random                                 5.098 ± 0%           5.144 ± 0%  +0.90% (p=0.000 n=10)
+Sort_Random                                 5.921 ± 0%           6.031 ± 0%  +1.85% (p=0.000 n=10)
 
             │ results/Sort_Random__7a0a58c9e3_1.19.txt │ results/Sort_Random__7a0a58c9e3_gotip.txt │
-            │                sys-sec/op                │      sys-sec/op        vs base            │
-Sort_Random                              6.010m ± 166%           4.008m ± 200%  ~ (p=0.678 n=10+8)
-
-            │ results/Sort_Random__7a0a58c9e3_gotip.txt │
-            │                 sys-ns/op                 │
-Sort_Random                                 0.000 ± ∞ ¹
+            │                sys-ns/op                 │      sys-ns/op        vs base             │
+Sort_Random                                0.000 ± ∞ ¹            0.000 ± ∞ ¹  ~ (p=1.000 n=3+2) ²
 ¹ need >= 6 samples for confidence interval at level 0.95
+² all samples are equal
+
+            │ results/Sort_Random__7a0a58c9e3_1.19.txt │ results/Sort_Random__7a0a58c9e3_gotip.txt │
+            │                sys-sec/op                │       sys-sec/op        vs base           │
+Sort_Random                               8.006m ± 99%             7.999m ± 50%  ~ (p=0.672 n=7+8)

@@ -1,18 +1,18 @@
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
               │                   sec/op                   │       sec/op         vs base                │
-Sort_Reversed                                 3576.9m ± 0%           375.2m ± 0%  -89.51% (p=0.000 n=10)
+Sort_Reversed                                 3542.6m ± 0%           371.2m ± 0%  -89.52% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
               │                user-sec/op                 │     user-sec/op      vs base                │
-Sort_Reversed                                 3583.9m ± 0%           373.9m ± 1%  -89.57% (p=0.000 n=10)
+Sort_Reversed                                 3543.2m ± 0%           371.8m ± 0%  -89.51% (p=0.000 n=10)
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
-              │                 sys-sec/op                 │      sys-sec/op       vs base               │
-Sort_Reversed                                 8.003m ± ∞ ¹           4.001m ± ∞ ¹  -50.01% (p=0.016 n=5)
+              │                 sys-sec/op                 │        sys-sec/op         vs base           │
+Sort_Reversed                                5.998m ± 100%               3.992m ± ∞ ¹  ~ (p=0.286 n=6+1)
 ¹ need >= 6 samples for confidence interval at level 0.95
 
               │ results/Sort_Reversed__4f239a2e28_1.18.txt │ results/Sort_Reversed__4f239a2e28_gotip.txt │
-              │                 sys-ns/op                  │        sys-ns/op          vs base           │
-Sort_Reversed                                  0.000 ± ∞ ¹                0.000 ± ∞ ¹  ~ (p=1.000 n=5) ²
+              │                 sys-ns/op                  │       sys-ns/op         vs base             │
+Sort_Reversed                                  0.000 ± ∞ ¹               0.000 ± 0%  ~ (p=1.000 n=4+9) ²
 ¹ need >= 6 samples for confidence interval at level 0.95
 ² all samples are equal
