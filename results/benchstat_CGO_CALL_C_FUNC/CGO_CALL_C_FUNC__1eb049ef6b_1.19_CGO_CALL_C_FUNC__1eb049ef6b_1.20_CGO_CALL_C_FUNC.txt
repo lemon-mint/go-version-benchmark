@@ -1,16 +1,16 @@
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.20.txt │
                 │                    sec/op                    │        sec/op          vs base               │
-CGO_CALL_C_FUNC                                     3.545 ± 0%              3.556 ± 0%  +0.33% (p=0.000 n=10)
+CGO_CALL_C_FUNC                                     4.278 ± 5%              4.240 ± 1%  -0.90% (p=0.011 n=10)
 
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.20.txt │
                 │                 user-sec/op                  │      user-sec/op       vs base               │
-CGO_CALL_C_FUNC                                     3.554 ± 0%              3.565 ± 0%  +0.32% (p=0.011 n=10)
-
-                │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │
-                │                  sys-ns/op                   │
-CGO_CALL_C_FUNC                                    0.000 ± ∞ ¹
-¹ need >= 6 samples for confidence interval at level 0.95
+CGO_CALL_C_FUNC                                     4.293 ± 4%              4.256 ± 1%  -0.87% (p=0.029 n=10)
 
                 │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.19.txt │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.20.txt │
                 │                  sys-sec/op                  │        sys-sec/op         vs base            │
-CGO_CALL_C_FUNC                                  12.029m ± 67%              8.009m ± 100%  ~ (p=0.364 n=7+10)
+CGO_CALL_C_FUNC                                   12.04m ± 67%               12.03m ± 33%  ~ (p=0.388 n=10+9)
+
+                │ results/CGO_CALL_C_FUNC__1eb049ef6b_1.20.txt │
+                │                  sys-ns/op                   │
+CGO_CALL_C_FUNC                                    0.000 ± ∞ ¹
+¹ need >= 6 samples for confidence interval at level 0.95

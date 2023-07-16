@@ -1,11 +1,11 @@
                    │ results/Garbage_Collection__f27466590e_1.19.txt │ results/Garbage_Collection__f27466590e_gotip.txt │
                    │                     sec/op                      │          sec/op           vs base                │
-Garbage_Collection                                        5.572 ± 1%                 6.571 ± 1%  +17.94% (p=0.000 n=10)
+Garbage_Collection                                        6.766 ± 1%                 7.902 ± 1%  +16.79% (p=0.000 n=10)
 
                    │ results/Garbage_Collection__f27466590e_1.19.txt │ results/Garbage_Collection__f27466590e_gotip.txt │
                    │                   user-sec/op                   │       user-sec/op         vs base                │
-Garbage_Collection                                        10.62 ± 1%                 12.56 ± 0%  +18.20% (p=0.000 n=10)
+Garbage_Collection                                        12.90 ± 1%                 15.05 ± 1%  +16.68% (p=0.000 n=10)
 
                    │ results/Garbage_Collection__f27466590e_1.19.txt │ results/Garbage_Collection__f27466590e_gotip.txt │
-                   │                   sys-sec/op                    │        sys-sec/op         vs base                │
-Garbage_Collection                                      139.9m ± 12%               119.8m ± 17%  -14.39% (p=0.004 n=10)
+                   │                   sys-sec/op                    │           sys-sec/op            vs base          │
+Garbage_Collection                                      173.6m ± 22%                     155.8m ± 28%  ~ (p=0.123 n=10)

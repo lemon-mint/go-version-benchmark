@@ -1,14 +1,14 @@
             │ results/Sort_Random__7a0a58c9e3_1.19.txt │ results/Sort_Random__7a0a58c9e3_1.20.txt │
-            │                  sec/op                  │      sec/op        vs base               │
-Sort_Random                                 5.088 ± 0%          5.085 ± 0%  -0.06% (p=0.023 n=10)
+            │                  sec/op                  │         sec/op          vs base          │
+Sort_Random                                 6.112 ± 1%               6.138 ± 1%  ~ (p=0.796 n=10)
 
             │ results/Sort_Random__7a0a58c9e3_1.19.txt │ results/Sort_Random__7a0a58c9e3_1.20.txt │
             │               user-sec/op                │      user-sec/op        vs base          │
-Sort_Random                                 5.092 ± 0%               5.088 ± 0%  ~ (p=0.089 n=10)
+Sort_Random                                 6.120 ± 1%               6.148 ± 1%  ~ (p=0.796 n=10)
 
             │ results/Sort_Random__7a0a58c9e3_1.19.txt │ results/Sort_Random__7a0a58c9e3_1.20.txt │
             │                sys-sec/op                │      sys-sec/op       vs base            │
-Sort_Random                               12.02m ± 33%          10.01m ± 179%  ~ (p=0.968 n=9+10)
+Sort_Random                               8.009m ± 50%         12.012m ± 133%  ~ (p=0.503 n=8+10)
 
             │ results/Sort_Random__7a0a58c9e3_1.19.txt │
             │                sys-ns/op                 │

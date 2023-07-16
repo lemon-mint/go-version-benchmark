@@ -1,14 +1,14 @@
            │ results/alloc_1.5k__78691b2f49_1.19.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
            │                 sec/op                  │      sec/op       vs base                │
-alloc_1.5k                                2.193 ± 0%         4.351 ± 0%  +98.41% (p=0.000 n=10)
+alloc_1.5k                                2.633 ± 1%         5.203 ± 0%  +97.59% (p=0.000 n=10)
 
            │ results/alloc_1.5k__78691b2f49_1.19.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
            │               user-sec/op               │   user-sec/op     vs base                │
-alloc_1.5k                                2.196 ± 0%         4.359 ± 0%  +98.56% (p=0.000 n=10)
+alloc_1.5k                                2.632 ± 1%         5.211 ± 0%  +97.96% (p=0.000 n=10)
 
            │ results/alloc_1.5k__78691b2f49_1.19.txt │ results/alloc_1.5k__78691b2f49_gotip.txt │
-           │               sys-sec/op                │   sys-sec/op    vs base                  │
-alloc_1.5k                             4.005m ± 299%    6.008m ± 100%  +50.01% (p=0.012 n=7+10)
+           │               sys-sec/op                │      sys-sec/op       vs base            │
+alloc_1.5k                              7.999m ± 50%           8.012m ± 50%  ~ (p=0.762 n=8+10)
 
            │ results/alloc_1.5k__78691b2f49_1.19.txt │
            │                sys-ns/op                │
